@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FILENAME	gery.cpp	/^#define FILENAME /;"	d	file:
+FILENAME	gery.old.cpp	/^#define FILENAME /;"	d	file:
+FILE_CIN	gery.cpp	/^#define FILE_CIN$/;"	d	file:
+FILE_CIN	gery.old.cpp	/^#define FILE_CIN$/;"	d	file:
+RUN_ARGS	Makefile	/^  RUN_ARGS := $(word 2,$(MAKECMDGOALS))$/;"	m
+TARGET	Makefile	/^TARGET = gery$/;"	m
+TARGET_CPP	Makefile	/^TARGET_CPP = $(TARGET).cpp$/;"	m
+TARGET_EXE	Makefile	/^TARGET_EXE = $(TARGET).out$/;"	m
+TARGET_IN	Makefile	/^TARGET_IN = $(TARGET)_in$/;"	m
+TARGET_OUT	Makefile	/^TARGET_OUT = $(TARGET)_out$/;"	m
+board	gery.cpp	/^int board[20][20]={0,};$/;"	v
+board	gery.old.cpp	/^int board[20][20];$/;"	v
+calc	gery.cpp	/^int calc(int c[20][20]){$/;"	f
+calc	gery.old.cpp	/^int calc(int c[20][20]){$/;"	f
+debug	gery.cpp	/^#define debug$/;"	d	file:
+debug	gery.old.cpp	/^#define debug$/;"	d	file:
+diff	Makefile	/^define diff$/;"	m
+dir	gery.old.cpp	/^int dir[2][2]={$/;"	v
+drawl	gery.cpp	/^int drawl(int i,int j, int m, int n){$/;"	f
+drawlines	gery.old.cpp	/^int drawlines(int x, int y){$/;"	f
+in_txt	Makefile	/^define in_txt$/;"	m
+k	gery.cpp	/^int k;$/;"	v
+main	gery.cpp	/^int main(){$/;"	f
+main	gery.old.cpp	/^int main(){$/;"	f
+n	gery.old.cpp	/^int n;$/;"	v
+out_txt	Makefile	/^define out_txt$/;"	m
+printc	gery.cpp	/^void printc(int c[20][20]){$/;"	f
+printc	gery.old.cpp	/^void printc(int c[20][20],int x, int y){$/;"	f

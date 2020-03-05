@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FILE_CIN	obser.cpp	/^#define FILE_CIN$/;"	d	file:
+FILE_NAME	obser.cpp	/^#define FILE_NAME /;"	d	file:
+M	obser.cpp	/^enum {P,M};\/\/반시계방향회전, 시계방향회전$/;"	e	enum:__anon1	file:
+P	obser.cpp	/^enum {P,M};\/\/반시계방향회전, 시계방향회전$/;"	e	enum:__anon1	file:
+RUN_ARGS	Makefile	/^  RUN_ARGS := $(word 2,$(MAKECMDGOALS))$/;"	m
+TARGET	Makefile	/^TARGET = obser$/;"	m
+TARGET_CPP	Makefile	/^TARGET_CPP = $(TARGET).cpp$/;"	m
+TARGET_EXE	Makefile	/^TARGET_EXE = $(TARGET).out$/;"	m
+TARGET_IN	Makefile	/^TARGET_IN = $(TARGET)_in$/;"	m
+TARGET_OUT	Makefile	/^TARGET_OUT = $(TARGET)_out$/;"	m
+board	obser.cpp	/^int board[8][8];$/;"	v
+bruteforce	obser.cpp	/^void bruteforce(int N, int M){$/;"	f
+cctvbitmax	obser.cpp	/^int cctvbitmax;$/;"	v
+cctvcate	obser.cpp	/^int cctvcate[8];$/;"	v
+cctvind	obser.cpp	/^int cctvind=0;$/;"	v
+cctvnowdir	obser.cpp	/^int cctvnowdir[8]={0,};$/;"	v
+cctvpo	obser.cpp	/^pair<int,int> cctvpo[8];$/;"	v
+clear	obser.cpp	/^void clear(int N, int M)$/;"	f
+cnt	obser.cpp	/^int cnt=INT_MAX;$/;"	v
+debug	obser.cpp	/^#define debug /;"	d	file:
+dir	obser.cpp	/^int dir[4][2] = {{0,1},{1,0},{0,-1},{-1,0}};$/;"	v
+dir_operate	obser.cpp	/^int dir_operate(int dirind, int operant,int pn){$/;"	f
+drawall	obser.cpp	/^int drawall(int N, int M){$/;"	f
+drawit	obser.cpp	/^void drawit(int dirind, int cctvind, int N, int M){$/;"	f
+drawone	obser.cpp	/^void drawone(int dirind, int cctvind, int N, int M){$/;"	f
+in_txt	Makefile	/^define in_txt$/;"	m
+main	obser.cpp	/^int main(){$/;"	f
+printtboard	obser.cpp	/^void printtboard(int N, int M){$/;"	f
+revert	obser.cpp	/^void revert(int N, int M){$/;"	f
+searchZ	obser.cpp	/^int searchZ(int N, int M)$/;"	f
+tboard	obser.cpp	/^int tboard[8][8];$/;"	v
+wall	obser.cpp	/^vector<pair<int,int> > wall;$/;"	v
+z	obser.cpp	/^int z=0;$/;"	v

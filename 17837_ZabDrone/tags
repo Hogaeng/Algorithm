@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FILENAME	zab.cpp	/^#define FILENAME /;"	d	file:
+FILE_CIN	zab.cpp	/^#define FILE_CIN$/;"	d	file:
+N	test2.cpp	/^#define N /;"	d	file:
+N	test3.cpp	/^#define N /;"	d	file:
+RUN_ARGS	Makefile	/^  RUN_ARGS := $(word 2,$(MAKECMDGOALS))$/;"	m
+TARGET	Makefile	/^TARGET = zab$/;"	m
+TARGET_CPP	Makefile	/^TARGET_CPP = $(TARGET).cpp$/;"	m
+TARGET_EXE	Makefile	/^TARGET_EXE = $(TARGET).out$/;"	m
+TARGET_IN	Makefile	/^TARGET_IN = $(TARGET)_in$/;"	m
+TARGET_OUT	Makefile	/^TARGET_OUT = $(TARGET)_out$/;"	m
+board	zab.cpp	/^int board[12][12]={0,};$/;"	v
+debug	zab.cpp	/^#define debug$/;"	d	file:
+diff	Makefile	/^define diff$/;"	m
+dir	zab.cpp	/^int dir[4][2]={$/;"	v
+in_txt	Makefile	/^define in_txt$/;"	m
+k	zab.cpp	/^int k;$/;"	v
+loc	zab.cpp	/^vector<int> loc[12][12];$/;"	v
+main	test.cpp	/^int main(void){$/;"	f
+main	test2.cpp	/^int main(void){$/;"	f
+main	test3.cpp	/^int main(void){$/;"	f
+main	zab.cpp	/^int main(){$/;"	f
+mal	zab.cpp	/^int mal[10][3]={0,};$/;"	v
+move	zab.cpp	/^void move(int idx){$/;"	f
+movewhite	zab.cpp	/^void movewhite(int vidx, int idx, int x, int y, int dx, int dy){$/;"	f
+n	zab.cpp	/^int n;$/;"	v
+next	zab.cpp	/^bool next(){$/;"	f
+out_txt	Makefile	/^define out_txt$/;"	m
+printmal	zab.cpp	/^void printmal(){$/;"	f

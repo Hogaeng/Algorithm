@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FILENAME	pipe.cpp	/^#define FILENAME /;"	d	file:
+FILE_CIN	pipe.cpp	/^#define FILE_CIN$/;"	d	file:
+RUN_ARGS	Makefile	/^  RUN_ARGS := $(word 2,$(MAKECMDGOALS))$/;"	m
+TARGET	Makefile	/^TARGET = pipe$/;"	m
+TARGET_CPP	Makefile	/^TARGET_CPP = $(TARGET).cpp$/;"	m
+TARGET_EXE	Makefile	/^TARGET_EXE = $(TARGET).out$/;"	m
+TARGET_IN	Makefile	/^TARGET_IN = $(TARGET)_in$/;"	m
+TARGET_OUT	Makefile	/^TARGET_OUT = $(TARGET)_out$/;"	m
+adir	pipe.cpp	/^int adir[3][4]={$/;"	v
+board	pipe.cpp	/^int board[16][16];$/;"	v
+cdir	pipe.cpp	/^int cdir[2][4]={$/;"	v
+cnt	pipe.cpp	/^int cnt=0;$/;"	v
+debug	pipe.cpp	/^#define debug$/;"	d	file:
+diff	Makefile	/^define diff$/;"	m
+hdir	pipe.cpp	/^int hdir[2][4]={$/;"	v
+in_txt	Makefile	/^define in_txt$/;"	m
+main	pipe.cpp	/^int main(){$/;"	f
+n	pipe.cpp	/^int n;$/;"	v
+out_txt	Makefile	/^define out_txt$/;"	m
+recur	pipe.cpp	/^void recur(int xi, int xj, int yi, int yj,int s){$/;"	f

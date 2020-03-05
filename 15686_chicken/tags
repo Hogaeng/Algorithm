@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+B	chicken.old.cpp	/^enum {B,H,C};$/;"	e	enum:__anon1	file:
+C	chicken.old.cpp	/^enum {B,H,C};$/;"	e	enum:__anon1	file:
+FILENAME	chicken.cpp	/^#define FILENAME /;"	d	file:
+FILENAME	chicken.old.cpp	/^#define FILENAME /;"	d	file:
+FILE_CIN	chicken.cpp	/^#define FILE_CIN$/;"	d	file:
+FILE_CIN	chicken.old.cpp	/^#define FILE_CIN$/;"	d	file:
+H	chicken.old.cpp	/^enum {B,H,C};$/;"	e	enum:__anon1	file:
+RUN_ARGS	Makefile	/^  RUN_ARGS := $(word 2,$(MAKECMDGOALS))$/;"	m
+TARGET	Makefile	/^TARGET = chicken$/;"	m
+TARGET_CPP	Makefile	/^TARGET_CPP = $(TARGET).cpp$/;"	m
+TARGET_EXE	Makefile	/^TARGET_EXE = $(TARGET).out$/;"	m
+TARGET_IN	Makefile	/^TARGET_IN = $(TARGET)_in$/;"	m
+TARGET_OUT	Makefile	/^TARGET_OUT = $(TARGET)_out$/;"	m
+ans	test.cpp	/^int n,m,ans=INT_MAX;$/;"	v
+bfs	chicken.old.cpp	/^int bfs(){$/;"	f
+bfs_subfunc	chicken.old.cpp	/^int bfs_subfunc(int r, int c,int cnt){$/;"	f
+board	chicken.old.cpp	/^int board[50][50]={0,};$/;"	v
+buf	chicken.old.cpp	/^queue<pair<int,int> > buf;$/;"	v
+c	chicken.cpp	/^vector<vector<int> > c;$/;"	v
+check	test.cpp	/^int map[50][50],dis[50][50],zero[50][50],check[50][50];$/;"	v
+chick	test.cpp	/^vector <pair<int,int> >chickk,chick;$/;"	v
+chicken	chicken.old.cpp	/^vector<pair<int,int> > chicken;$/;"	v
+chickk	test.cpp	/^vector <pair<int,int> >chickk,chick;$/;"	v
+cnt	chicken.cpp	/^int cnt=0;$/;"	v
+cnt	test.cpp	/^int cnt=0;$/;"	v
+cnt_dis	test.cpp	/^void cnt_dis(){$/;"	f
+cnts	chicken.old.cpp	/^queue<int> cnts;$/;"	v
+copy_map	test.cpp	/^void copy_map(int (*a)[50],int (*b)[50]){\/\/복사함수$/;"	f
+dfs	test.cpp	/^void dfs(int depth,int x,int y){$/;"	f
+diff	Makefile	/^define diff$/;"	m
+dir	chicken.cpp	/^int dir[4][2]={$/;"	v
+dir	chicken.old.cpp	/^int dir[4][2] = {{-1,0},{0,1},{1,0},{0,-1}};$/;"	v
+dis	test.cpp	/^int map[50][50],dis[50][50],zero[50][50],check[50][50];$/;"	v
+dx	test.cpp	/^int dx[4]={0,1,0,-1},dy[4]={1,0,-1,0};$/;"	v
+dy	test.cpp	/^int dx[4]={0,1,0,-1},dy[4]={1,0,-1,0};$/;"	v
+eboard	chicken.old.cpp	/^bool eboard[50][50]={0,};$/;"	v
+house	chicken.old.cpp	/^vector<pair<int,int> > house;$/;"	v
+house	test.cpp	/^vector <pair<int,int> >house;$/;"	v
+in_txt	Makefile	/^define in_txt$/;"	m
+m	chicken.old.cpp	/^int n,m;$/;"	v
+m	test.cpp	/^int n,m,ans=INT_MAX;$/;"	v
+main	chicken.cpp	/^int main(){$/;"	f
+main	chicken.old.cpp	/^int main(){$/;"	f
+main	test.cpp	/^int main(){$/;"	f
+makeboard	chicken.old.cpp	/^void makeboard(){$/;"	f
+makeboardsub	chicken.old.cpp	/^void makeboardsub(){$/;"	f
+map	test.cpp	/^int map[50][50],dis[50][50],zero[50][50],check[50][50];$/;"	v
+n	chicken.old.cpp	/^int n,m;$/;"	v
+n	test.cpp	/^int n,m,ans=INT_MAX;$/;"	v
+out_txt	Makefile	/^define out_txt$/;"	m
+recur_c	chicken.cpp	/^int recur_c(int n,int lev,int idx, int m,vector<int> choice){$/;"	f
+recur_h	chicken.cpp	/^int recur_h(int lev, queue<vector<int> >subh, bool board[50][50],bool c[50][50],int n){$/;"	f
+recursiv	chicken.old.cpp	/^int recursiv(int cnt,int lv){$/;"	f
+subchicken	chicken.old.cpp	/^vector<pair<int,int> > subchicken;$/;"	v
+wipe	chicken.old.cpp	/^void wipe(){$/;"	f
+wipeEntered	chicken.old.cpp	/^void wipeEntered(){$/;"	f
+zero	test.cpp	/^int map[50][50],dis[50][50],zero[50][50],check[50][50];$/;"	v

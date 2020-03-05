@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FILENAME	bridge.cpp	/^#define FILENAME /;"	d	file:
+FILE_CIN	bridge.cpp	/^#define FILE_CIN$/;"	d	file:
+RUN_ARGS	Makefile	/^  RUN_ARGS := $(word 2,$(MAKECMDGOALS))$/;"	m
+TARGET	Makefile	/^TARGET = bridge$/;"	m
+TARGET_CPP	Makefile	/^TARGET_CPP = $(TARGET).cpp$/;"	m
+TARGET_EXE	Makefile	/^TARGET_EXE = $(TARGET).out$/;"	m
+TARGET_IN	Makefile	/^TARGET_IN = $(TARGET)_in$/;"	m
+TARGET_OUT	Makefile	/^TARGET_OUT = $(TARGET)_out$/;"	m
+bfs	bridge.cpp	/^void bfs(int i,int j,int cl){$/;"	f
+board	bridge.cpp	/^int board[10][10];$/;"	v
+bridges	bridge.cpp	/^void bridges(){$/;"	f
+check	bridge.cpp	/^bool check(vector<int> &choice){$/;"	f
+cn	bridge.cpp	/^int cn;$/;"	v
+color	bridge.cpp	/^void color(){$/;"	f
+comb	bridge.cpp	/^int comb (int lev,int ind,vector<vector<int> > &brr, vector<vector<int> > &brc, vector<int> &choice) {$/;"	f
+comb	test.cpp	/^void comb(int r, int c, int lev,int ind,int check[10]){$/;"	f
+combrepet	test.cpp	/^void combrepet(int r,int c, int lev, int ind,int check[10]){$/;"	f
+debug	bridge.cpp	/^#define debug$/;"	d	file:
+diff	Makefile	/^define diff$/;"	m
+in_txt	Makefile	/^define in_txt$/;"	m
+m	bridge.cpp	/^int m,n;$/;"	v
+main	bridge.cpp	/^int main(){$/;"	f
+main	test.cpp	/^int main(void){$/;"	f
+makeit	bridge.cpp	/^void makeit(vector<vector<int> > &brp, bool iscolum){$/;"	f
+n	bridge.cpp	/^int m,n;$/;"	v
+out_txt	Makefile	/^define out_txt$/;"	m
+permrepet	test.cpp	/^void permrepet(int r,int c, int lev,int check[10]){$/;"	f
+printb	bridge.cpp	/^void printb(){$/;"	f

@@ -1,0 +1,89 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Answer	yut.new1.cpp	/^int Answer;$/;"	v
+Blue_Circle	yut.new1.cpp	/^    int Blue_Circle;    \/\/ 윷이 한번이라도 시작한 파랑색 원의 번호$/;"	m	struct:YUT	file:
+Check_Special_Point	yut.new1.cpp	/^bool Check_Special_Point(int Circle, int Pos)$/;"	f
+Check_Visit	yut.new1.cpp	/^bool Check_Visit(STATE S, int Idx)$/;"	f
+Command	yut.new1.cpp	/^int Command[MAX];$/;"	v
+DFS	yut.new1.cpp	/^void DFS(int Cnt)$/;"	f
+FILENAME	yut.new1.cpp	/^#define FILENAME /;"	d	file:
+FILENAME	yut.old.cpp	/^#define FILENAME /;"	d	file:
+FILE_CIN	yut.new1.cpp	/^#define FILE_CIN$/;"	d	file:
+FILE_CIN	yut.old.cpp	/^#define FILE_CIN$/;"	d	file:
+Finish	yut.new1.cpp	/^    bool Finish;        \/\/ 윷이 도착점에 도달했는지에 대한 여부$/;"	m	struct:YUT	file:
+Finish	yut.new1.cpp	/^    bool Finish;        \/\/ 이번 움직임으로 윷이 도착점에 도달하였는지에 대한 여부판단$/;"	m	struct:STATE	file:
+GOAL	yut.new.cpp	/^const int TURNEL_GOAL = 44, GOAL = 21;$/;"	v
+GetState	yut.new1.cpp	/^STATE GetState(int Idx, int C_Idx)$/;"	f
+Input	yut.new1.cpp	/^void Input()$/;"	f
+MAP_Score	yut.new1.cpp	/^int MAP_Score[4][30];        \/\/ 점수 판$/;"	v
+MAX	yut.new1.cpp	/^#define MAX /;"	d	file:
+MakeState	yut.new1.cpp	/^void MakeState(STATE S, int Idx, bool T)$/;"	f
+MoveNum	yut.new1.cpp	/^int MoveNum[4];                \/\/ 각 경로 별, 움직여야 하는 최대 칸수를 저장하는 배열$/;"	v
+Next	yut.new1.cpp	/^    int Next;            \/\/ 이동하려는 칸$/;"	m	struct:STATE	file:
+Pos	yut.new1.cpp	/^    int Pos;            \/\/ 윷의 정보$/;"	m	struct:YUT	file:
+Prev	yut.new1.cpp	/^    int Prev;            \/\/ 현재 칸$/;"	m	struct:STATE	file:
+RUN_ARGS	Makefile	/^  RUN_ARGS := $(word 2,$(MAKECMDGOALS))$/;"	m
+STATE	yut.new1.cpp	/^struct STATE            \/\/ 움직임에 대한 정보를 받아오는 구조체$/;"	s	file:
+Score	yut.new1.cpp	/^    int Score;            \/\/ 윷의 점수$/;"	m	struct:YUT	file:
+Select_Circle	yut.new1.cpp	/^    bool Select_Circle;    \/\/ 이번 움직임으로 파랑색 원의 번호가 결정되었는지에 대한 여부판단$/;"	m	struct:STATE	file:
+Setting	yut.new1.cpp	/^void Setting()$/;"	f
+Solution	yut.new1.cpp	/^void Solution()$/;"	f
+Solve	yut.new1.cpp	/^void Solve()$/;"	f
+Special_Point	yut.new1.cpp	/^bool Special_Point[4][30];    \/\/ 특별한 점 (모든 경로가 겹치는 칸들)$/;"	v
+Start_Circle	yut.new1.cpp	/^    int Start_Circle;    \/\/ 시작한 파랑원의 번호(1, 2, 3 중 하나)$/;"	m	struct:STATE	file:
+TARGET	Makefile	/^TARGET = yut$/;"	m
+TARGET_CPP	Makefile	/^TARGET_CPP = $(TARGET).cpp$/;"	m
+TARGET_EXE	Makefile	/^TARGET_EXE = $(TARGET).out$/;"	m
+TARGET_IN	Makefile	/^TARGET_IN = $(TARGET)_in$/;"	m
+TARGET_OUT	Makefile	/^TARGET_OUT = $(TARGET)_out$/;"	m
+TURNEL_GOAL	yut.new.cpp	/^const int TURNEL_GOAL = 44, GOAL = 21;$/;"	v
+Visit	yut.new1.cpp	/^bool Visit[4][30];            \/\/ 이미 다른 윷이 있는지 없는지 판단하기 위한 배열$/;"	v
+YUT	yut.new1.cpp	/^struct YUT$/;"	s	file:
+Yut	yut.new1.cpp	/^YUT Yut[4];$/;"	v
+ans	yut.new.cpp	/^int ans, dice[10], h[4], score[4];$/;"	v
+board	yut.cpp	/^int board[5][20]={$/;"	v
+board	yut.old.cpp	/^int board[5][20]={$/;"	v
+boardis	yut.old.cpp	/^int boardis[16][4]={$/;"	v
+boundary	yut.cpp	/^bool boundary(int i, int j){$/;"	f
+boundary	yut.old.cpp	/^bool boundary(const int mal[4], const int mals[4],int nu){$/;"	f
+center	yut.new.cpp	/^	center = 40,$/;"	e	enum:turnel	file:
+check	yut.old.cpp	/^int check(){$/;"	f
+debug	yut.cpp	/^#define debug$/;"	d	file:
+debug	yut.old.cpp	/^#define debug$/;"	d	file:
+dfs	yut.new.cpp	/^void dfs(int n)$/;"	f
+dice	yut.new.cpp	/^int ans, dice[10], h[4], score[4];$/;"	v
+dicev	yut.cpp	/^int dicev[10];$/;"	v
+diff	Makefile	/^define diff$/;"	m
+dir	yut.cpp	/^int dir[4][4]={$/;"	v
+endl	yut.new1.cpp	/^#define endl /;"	d	file:
+gain_score	yut.new.cpp	/^int gain_score(int p)$/;"	f
+h	yut.new.cpp	/^int ans, dice[10], h[4], score[4];$/;"	v
+in_txt	Makefile	/^define in_txt$/;"	m
+input	makeit.cpp	/^int input[10]={0,};$/;"	v
+le	yut.new.cpp	/^	ls = 50, le = 52$/;"	e	enum:turnel	file:
+ls	yut.new.cpp	/^	ls = 50, le = 52$/;"	e	enum:turnel	file:
+main	makeit.cpp	/^int main(){$/;"	f
+main	yut.cpp	/^int main(){$/;"	f
+main	yut.new.cpp	/^int main()$/;"	f
+main	yut.new1.cpp	/^int main(void)$/;"	f
+main	yut.old.cpp	/^int main(){$/;"	f
+malchoice	yut.cpp	/^int malchoice[10];$/;"	v
+malpo	yut.old.cpp	/^int malpo[10] = {0,};$/;"	v
+move	yut.new.cpp	/^int move(int start, int cnt)$/;"	f
+movemal	yut.cpp	/^int movemal(){$/;"	f
+out_txt	Makefile	/^define out_txt$/;"	m
+re	yut.new.cpp	/^	rs = 26, re = 28,$/;"	e	enum:turnel	file:
+recur	makeit.cpp	/^void recur(int in, int im, int lm, int lv){$/;"	f
+recur	yut.old.cpp	/^int recur(int i,int m,int am){$/;"	f
+recur_pi	yut.cpp	/^int recur_pi(int lev){$/;"	f
+rs	yut.new.cpp	/^	rs = 26, re = 28,$/;"	e	enum:turnel	file:
+score	yut.new.cpp	/^int ans, dice[10], h[4], score[4];$/;"	v
+turndir	yut.cpp	/^int turndir(int i,int j){$/;"	f
+turnel	yut.new.cpp	/^enum turnel$/;"	g	file:
+visited	yut.new.cpp	/^bool visited[53];$/;"	v
+wf	makeit.cpp	/^ofstream wf;$/;"	v
+write	makeit.cpp	/^void write(){$/;"	f

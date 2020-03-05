@@ -1,0 +1,53 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+C	tree.old.cpp	/^#define C /;"	d	file:
+FILENAME	tree.cpp	/^#define FILENAME /;"	d	file:
+FILE_CIN	tree.cpp	/^#define FILE_CIN$/;"	d	file:
+K_MAX	tree.old.cpp	/^#define K_MAX /;"	d	file:
+M_MAX	tree.old.cpp	/^#define M_MAX /;"	d	file:
+R	tree.old.cpp	/^#define R /;"	d	file:
+RUN_ARGS	Makefile	/^  RUN_ARGS := $(word 2,$(MAKECMDGOALS))$/;"	m
+TARGET	Makefile	/^TARGET = tree$/;"	m
+TARGET_CPP	Makefile	/^TARGET_CPP = $(TARGET).cpp$/;"	m
+TARGET_EXE	Makefile	/^TARGET_EXE = $(TARGET).out$/;"	m
+TARGET_IN	Makefile	/^TARGET_IN = $(TARGET)_in$/;"	m
+TARGET_OUT	Makefile	/^TARGET_OUT = $(TARGET)_out$/;"	m
+board	tree.cpp	/^int board[10][10];$/;"	v
+board	tree.old.cpp	/^int board[R][C]={5,};$/;"	v
+counttree	tree.cpp	/^int counttree(){$/;"	f
+deadtrees	tree.old.cpp	/^vector<int> deadtrees[R][C];$/;"	v
+debug	tree.old.cpp	/^#define debug$/;"	d	file:
+diff	Makefile	/^define diff$/;"	m
+dir	tree.old.cpp	/^int dir[8][2]={{-1,0},{-1,1},{0,1},{1,1},{1,0},{1,-1},{0,-1},{-1,-1}};$/;"	v
+fall	tree.cpp	/^void fall(){$/;"	f
+fall	tree.old.cpp	/^void fall(){$/;"	f
+file_cin	tree.old.cpp	/^#define file_cin$/;"	d	file:
+in_txt	Makefile	/^define in_txt$/;"	m
+k	tree.old.cpp	/^int n,m,k;$/;"	v
+m	tree.old.cpp	/^int n,m,k;$/;"	v
+main	test.cpp	/^int main(){$/;"	f
+main	tree.cpp	/^int main(){$/;"	f
+main	tree.old.cpp	/^int main(){$/;"	f
+more	tree.cpp	/^int more[10][10];$/;"	v
+n	tree.cpp	/^int n;$/;"	v
+n	tree.old.cpp	/^int n,m,k;$/;"	v
+out_txt	Makefile	/^define out_txt$/;"	m
+printboard	tree.cpp	/^void printboard(){$/;"	f
+printboard	tree.old.cpp	/^void printboard(){$/;"	f
+printtree	tree.old.cpp	/^void printtree(){$/;"	f
+s2d2	tree.old.cpp	/^int s2d2[R][C]={0,};$/;"	v
+sortDownUp	tree.old.cpp	/^void sortDownUp(){$/;"	f
+sortUpDown	tree.old.cpp	/^void sortUpDown(){$/;"	f
+spring	tree.old.cpp	/^void spring(){$/;"	f
+springsummer	tree.cpp	/^void springsummer(){$/;"	f
+summer	tree.old.cpp	/^void summer(){$/;"	f
+trees	tree.cpp	/^vector<int> trees[10][10];$/;"	v
+trees	tree.old.cpp	/^vector<int> trees[R][C];$/;"	v
+winter	tree.cpp	/^void winter(){$/;"	f
+winter	tree.old.cpp	/^int winter(){$/;"	f
+wipe	tree.old.cpp	/^void wipe(){$/;"	f
+year	tree.old.cpp	/^int year(){$/;"	f

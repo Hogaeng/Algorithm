@@ -1,0 +1,89 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DEBUG	baby.java	/^	static final boolean DEBUG=false;$/;"	f	class:baby
+DEBUG_Z	baby.java	/^	static final int DEBUG_Z=5; $/;"	f	class:baby
+FILE_CIN	baby.cpp	/^#define FILE_CIN$/;"	d	file:
+FILE_CIN	baby.java	/^	static final boolean FILE_CIN = true;$/;"	f	class:baby
+FILE_CIN	baby_sanga.cpp	/^#define FILE_CIN$/;"	d	file:
+FILE_NAME	baby.cpp	/^#define FILE_NAME /;"	d	file:
+FILE_NAME	baby.java	/^	static final String FILE_NAME = "baby_in2.txt";$/;"	f	class:baby
+FILE_NAME	baby_sanga.cpp	/^#define FILE_NAME /;"	d	file:
+Item	baby.java	/^		Item(int x, int y, int move) {$/;"	m	class:baby.Item
+Item	baby.java	/^	static class Item {$/;"	c	class:baby
+N	baby.java	/^	static int N, cnt, targetX, targetY, targetSize = 2, time = 0;$/;"	f	class:baby
+N	baby_sanga.cpp	/^int N;$/;"	v
+RUN_ARGS	Makefile	/^  RUN_ARGS := $(word 2,$(MAKECMDGOALS))$/;"	m
+TARGET	Makefile	/^TARGET = baby$/;"	m
+TARGET_CPP	Makefile	/^TARGET_CPP = $(TARGET).cpp$/;"	m
+TARGET_EXE	Makefile	/^TARGET_EXE = $(TARGET).out$/;"	m
+TARGET_IN	Makefile	/^TARGET_IN = $(TARGET)_in$/;"	m
+TARGET_OUT	Makefile	/^TARGET_OUT = $(TARGET)_out$/;"	m
+arr	baby_sanga.cpp	/^int arr[20][20];$/;"	v
+baby	baby.java	/^public class baby {$/;"	c
+baby	baby_sanga.cpp	/^pair<int, int> baby;$/;"	v
+bfs	baby.cpp	/^int bfs(){$/;"	f
+bfs	baby_sanga.cpp	/^bool bfs(int size) {$/;"	f
+bfs2	baby.cpp	/^int bfs2(){$/;"	f
+br	baby.java	/^		private static BufferedReader br;$/;"	f	class:baby.sc	file:
+bx	baby.cpp	/^int bx=0,by=0;$/;"	v
+by	baby.cpp	/^int bx=0,by=0;$/;"	v
+c_d	baby_sanga.cpp	/^int c_d[4] = { 0, -1, 1, 0 };$/;"	v
+ck	baby_sanga.cpp	/^int ck[20][20];$/;"	v
+cnt	baby.java	/^	static int N, cnt, targetX, targetY, targetSize = 2, time = 0;$/;"	f	class:baby
+compare	baby.java	/^		public int compare(Item i1, Item i2) {$/;"	m	class:baby.ySort
+dir	baby.cpp	/^int dir[4][2]={{-1,0},{0,-1},{0,1},{1,0}};$/;"	v
+dx	baby.java	/^	static int[] dx = { -1, 0, 1, 0 };$/;"	f	class:baby
+dy	baby.java	/^	static int[] dy = { 0, -1, 0, 1 };$/;"	f	class:baby
+eat	baby.cpp	/^void eat(int x, int y){$/;"	f
+eocean	baby.cpp	/^int eocean[20][20] ={0,};$/;"	v
+fi	baby.java	/^		private static FileInputStream fi;$/;"	f	class:baby.sc	file:
+fishes	baby.java	/^	static ArrayList<Item> fishes = new ArrayList<Item>();$/;"	f	class:baby
+getBest	baby_sanga.cpp	/^void getBest(queue<pair<int,int> > q, int size) {$/;"	f
+in_txt	Makefile	/^define in_txt$/;"	m
+init	baby.java	/^		static void init() {$/;"	m	class:baby.sc
+main	baby.cpp	/^int main(){$/;"	f
+main	baby.java	/^	public static void main(String[] args) {$/;"	m	class:baby
+main	baby_sanga.cpp	/^int main() {$/;"	f
+main	makein.cpp	/^int main(){$/;"	f
+map	baby.java	/^	static int[][] map = new int[20][20];$/;"	f	class:baby
+move	baby.java	/^		int move;$/;"	f	class:baby.Item
+n	baby.cpp	/^int n=0;$/;"	v
+n	baby.java	/^		int n;$/;"	f	class:baby.Item
+next	baby.java	/^		static String next() {$/;"	m	class:baby.sc
+nextDouble	baby.java	/^		static double nextDouble() {$/;"	m	class:baby.sc
+nextInt	baby.java	/^		static int nextInt() {$/;"	m	class:baby.sc
+nextLong	baby.java	/^		static long nextLong() {$/;"	m	class:baby.sc
+ocean	baby.cpp	/^int ocean[20][20] ={0,};$/;"	v
+printeocean	baby.cpp	/^void printeocean(){$/;"	f
+printmap	baby.java	/^	private void printmap(){$/;"	m	class:baby	file:
+printocean	baby.cpp	/^void printocean(){$/;"	f
+r_d	baby_sanga.cpp	/^int r_d[4] = { -1, 0, 0, 1 };$/;"	v
+range	baby_sanga.cpp	/^int range(int r, int c) {$/;"	f
+readLine	baby.java	/^		static String readLine() {$/;"	m	class:baby.sc
+readLineReplace	baby.java	/^		static String readLineReplace() {$/;"	m	class:baby.sc
+resTime	baby_sanga.cpp	/^int resTime;$/;"	v
+sc	baby.java	/^	static class sc {$/;"	c	class:baby
+solve	baby.java	/^	private void solve() {$/;"	m	class:baby	file:
+st	baby.java	/^		private static StringTokenizer st;$/;"	f	class:baby.sc	file:
+state	baby.cpp	/^int state=2;$/;"	v
+stomach	baby.cpp	/^int stomach=0;$/;"	v
+targetSize	baby.java	/^	static int N, cnt, targetX, targetY, targetSize = 2, time = 0;$/;"	f	class:baby
+targetX	baby.java	/^	static int N, cnt, targetX, targetY, targetSize = 2, time = 0;$/;"	f	class:baby
+targetY	baby.java	/^	static int N, cnt, targetX, targetY, targetSize = 2, time = 0;$/;"	f	class:baby
+time	baby.java	/^	static int N, cnt, targetX, targetY, targetSize = 2, time = 0;$/;"	f	class:baby
+tt	baby.cpp	/^int tt=0;$/;"	v
+vec	baby.cpp	/^vector<pair<int,int> > vec;$/;"	v
+veccnt	baby.cpp	/^vector<int> veccnt;$/;"	v
+visited	baby.java	/^	static boolean[] visited = new boolean[400];$/;"	f	class:baby
+wipe	baby.cpp	/^void wipe(){$/;"	f
+wipe	baby.java	/^	static private void wipe(){$/;"	m	class:baby	file:
+wipee	baby.cpp	/^void wipee(){$/;"	f
+x	baby.java	/^		int x;$/;"	f	class:baby.Item
+y	baby.java	/^		int y;$/;"	f	class:baby.Item
+ySort	baby.java	/^	static class ySort implements Comparator<Item> {$/;"	c	class:baby
+z	baby.cpp	/^int z=0;$/;"	v
+z	baby.java	/^	static int z = 0;$/;"	f	class:baby

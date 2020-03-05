@@ -1,0 +1,46 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARG	test2/Makefile	/^    ARG := $(word 2, $(MAKECMDGOALS))$/;"	m
+FILENAME	seq4.cpp	/^#define FILENAME /;"	d	file:
+FILE_CIN	seq4.cpp	/^#define FILE_CIN$/;"	d	file:
+OBJECT	test2/Makefile	/^OBJECT = $(wildcard *.c)$/;"	m
+Q	test2.cpp	/^    Q(int s, int e, int x) : s(s),e(e),x(x){}$/;"	f	struct:Q
+Q	test2.cpp	/^struct Q{$/;"	s	file:
+Q	test3.cpp	/^    Q(){$/;"	f	struct:Q
+Q	test3.cpp	/^    Q(const Q &a) : s(a.s){$/;"	f	struct:Q
+Q	test3.cpp	/^    Q(int s) : s(s){$/;"	f	struct:Q
+Q	test3.cpp	/^struct Q{$/;"	s	file:
+RUN_ARGS	Makefile	/^  RUN_ARGS := $(word 2,$(MAKECMDGOALS))$/;"	m
+TARGET	Makefile	/^TARGET = seq4$/;"	m
+TARGET_CPP	Makefile	/^TARGET_CPP = $(TARGET).cpp$/;"	m
+TARGET_EXE	Makefile	/^TARGET_EXE = $(TARGET).out$/;"	m
+TARGET_IN	Makefile	/^TARGET_IN = $(TARGET)_in$/;"	m
+TARGET_OUT	Makefile	/^TARGET_OUT = $(TARGET)_out$/;"	m
+debug	seq4.cpp	/^#define debug$/;"	d	file:
+diff	Makefile	/^define diff$/;"	m
+dirs	test2/Makefile	/^dirs := a b c d$/;"	m
+e	test2.cpp	/^    int s,e,x;$/;"	m	struct:Q	file:
+files	test2/Makefile	/^files := $(foreach dir,$(dirs),$(find_files))$/;"	m
+find_files	test2/Makefile	/^find_files = $(wildcard $(dir)\/*)$/;"	m
+firstw	Makefile	/^firstw = $(firstword $(MAKECMDGOALS))$/;"	m
+h	test2/Makefile	/^h = 2$/;"	m
+in_txt	Makefile	/^define in_txt$/;"	m
+main	seq4.cpp	/^int main(){$/;"	f
+main	test2.cpp	/^int main(void){$/;"	f
+main	test2/main.c	/^int main(void){$/;"	f
+main	test2/test.cpp	/^int main(void){$/;"	f
+main	test3.cpp	/^int main(void){$/;"	f
+operator +	test3.cpp	/^    bool operator+(const Q){$/;"	f	struct:Q
+operator <	test2.cpp	/^    bool operator<(Q q) const{$/;"	f	struct:Q
+out_txt	Makefile	/^define out_txt$/;"	m
+printi	test2/printi.c	/^void printi(int i){$/;"	f
+s	test2.cpp	/^    int s,e,x;$/;"	m	struct:Q	file:
+s	test3.cpp	/^    int s;$/;"	m	struct:Q	file:
+set	test2/Makefile	/^set = $(eval $1:=$2)$/;"	m
+sss	test.sh	/^sss(){$/;"	f
+ttt	test2/Makefile	/^ttt = server client$/;"	m
+x	test2.cpp	/^    int s,e,x;$/;"	m	struct:Q	file:

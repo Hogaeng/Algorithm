@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+D	oper.cpp	/^enum {P,S,M,D};$/;"	e	enum:__anon2	file:
+D	oper.cpp.cpp	/^enum {P,M,T,D};$/;"	e	enum:__anon1	file:
+M	oper.cpp	/^enum {P,S,M,D};$/;"	e	enum:__anon2	file:
+M	oper.cpp.cpp	/^enum {P,M,T,D};$/;"	e	enum:__anon1	file:
+MAX_INIT	oper.cpp	/^#define MAX_INIT /;"	d	file:
+MIN_INIT	oper.cpp	/^#define MIN_INIT /;"	d	file:
+P	oper.cpp	/^enum {P,S,M,D};$/;"	e	enum:__anon2	file:
+P	oper.cpp.cpp	/^enum {P,M,T,D};$/;"	e	enum:__anon1	file:
+RUN_ARGS	Makefile	/^  RUN_ARGS := $(word 2,$(MAKECMDGOALS))$/;"	m
+S	oper.cpp	/^enum {P,S,M,D};$/;"	e	enum:__anon2	file:
+T	oper.cpp.cpp	/^enum {P,M,T,D};$/;"	e	enum:__anon1	file:
+TARGET	Makefile	/^TARGET = oper$/;"	m
+TARGET_CPP	Makefile	/^TARGET_CPP = $(TARGET).cpp$/;"	m
+TARGET_EXE	Makefile	/^TARGET_EXE = $(TARGET).out$/;"	m
+TARGET_IN	Makefile	/^TARGET_IN = $(TARGET)_in$/;"	m
+TARGET_OUT	Makefile	/^TARGET_OUT = $(TARGET)_out$/;"	m
+big	oper.cpp	/^int big(int lv){$/;"	f
+calc	oper.cpp	/^int calc(bool bs){$/;"	f
+calc	oper.cpp.cpp	/^void calc(vector<int> subc[4], int caten, vector<int> subp, vector<int> &p){$/;"	f
+file_cin	oper.cpp	/^#define file_cin$/;"	d	file:
+in_txt	Makefile	/^define in_txt$/;"	m
+main	oper.cpp	/^int main(){$/;"	f
+main	oper.cpp.cpp	/^int main(){$/;"	f
+makedst	oper.cpp.cpp	/^void makedst(short &c, int n,int dst){$/;"	f
+n	oper.cpp	/^int n;$/;"	v
+num	oper.cpp	/^int num[11];$/;"	v
+oper	oper.cpp	/^int oper[10];$/;"	v
+opercnt	oper.cpp	/^int opercnt[4];$/;"	v
+printoper	oper.cpp	/^void printoper(int tmp){$/;"	f
+small	oper.cpp	/^int small(int lv){$/;"	f
+wipe	oper.cpp	/^void wipe(){$/;"	f
