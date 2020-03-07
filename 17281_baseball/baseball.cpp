@@ -5,9 +5,20 @@
 #define FILENAME "baseball_in.txt"
 #define FILE_CIN
 using namespace std;
+int z;
 int n;
+vector<int> answer[2] = {{3,1,2,4,4,2,3,1,0},{2,4,3,1,2,4,3,0,1}};
 vector<int> player[50];
-int simul(int ind, int &indj){
+vector<int> taza;
+bool chek(){
+    bool bb=true;
+    for(int i=0;i<n;i++)
+	for(int j=0;j<9;j++)
+	    if(answer[i][j]!=player[i][j])
+		bb=false;
+    return bb;
+}
+int simul(int ind,int &indj){
     bool loota[3]={0,};
     int out=0;
     int res=0;
@@ -24,8 +35,10 @@ int simul(int ind, int &indj){
 	    case 4:
 		res++;
 		for(int j=0;j<3;j++){
-		    if(loota[j])
+		    if(loota[j]){
+			loota[j]=false;
 			res++;
+		    }
 		}
 		break;
 	    case 1:
@@ -58,60 +71,79 @@ int simul(int ind, int &indj){
 	    loota[player[ind][i]-1]=true;
 	}
 	/*
-	for(int j=2;j>-1;j--){
-	    cout<<loota[j]<<' ';
+	if(chek()){
+	    for(int j=2;j>-1;j--){
+		cout<<loota[j]<<' ';
+	    }
+	    cout<<res<<' '<<i<<' '<<player[ind][i]<<endl;
 	}
-	cout<<res<<' '<<i<<endl;
 	*/
     }
     indj=i+1;
     return res;
 }
-/*
-void swap(int i, int j,int ind){
-    int t=player[ind][i];
-    player[ind][i]=player[ind][j];
-    player[ind][j]=t;
+void printn(int endi){
+    for(int i=0;i<n;i++){
+	for(int j=0;j<endi;j++)
+	    cout<<player[i][j]<<' ';
+	cout<<endl;
+    }
+    cout<<endl;
 }
-int recur_p(int ind,int lev, int &indj){
-    if(lev==9){
-	return simul(ind,indj);
+void swap(int i, int j){
+    for(int ind=0;ind<n;ind++){
+	int t=player[ind][i];
+	player[ind][i]=player[ind][j];
+	player[ind][j]=t;
+    }
+}
+int recur_p(int lev){
+    if(lev==8){
+	int indj=0;
+	int total=0;
+	for(int i=0;i<n;i++)
+	    player[i].insert(player[i].begin()+3,taza[i]);
+	for(int i=0;i<n;i++){
+	    total+=simul(i,indj);
+	}
+	for(int i=0;i<n;i++)
+	    player[i].erase(player[i].begin()+3);
+	return total;
     }
     else{
 	int maxi=0;
-	for(int i=lev;i<9;i++){
-	    swap(i,lev,ind);
-	    int t=recur_p(ind,lev+1,indj);
+	for(int i=lev;i<8;i++){
+	    swap(i,lev);
+	    int t=recur_p(lev+1);
 	    maxi=max(t,maxi);
-	    swap(i,lev,ind);
+	    swap(i,lev);
 	}
 	return maxi;
     }
 }
-*/
 int main(){
 #ifdef FILE_CIN
 	freopen(FILENAME,"r",stdin);
 	int tmp;
 	cin>>tmp;
-	for(int z=0;z<tmp;z++){
+	for(z=0;z<tmp;z++){
 #endif
 	    cin>>n;
+	    vector<int> tmp2;
 	    for(int i=0;i<n;i++){
 		vector<int> tmp;
 		for(int j=0;j<9;j++){
 		    int t;
 		    cin>>t;
-		    tmp.push_back(t);
+		    if(j==0)
+			tmp2.push_back(t);
+		    else
+			tmp.push_back(t);
 		}
 		player[i]=tmp;
 	    }
-	    int total=0;
-	    int indj=0;
-	    for(int i=0;i<n;i++){
-		rearrange(i,indj);
-		total+=simul(i,indj);
-	    }
+	    taza=tmp2;
+	    int total=recur_p(0);
 	    cout<<total<<endl;
 #ifdef FILE_CIN
 	}

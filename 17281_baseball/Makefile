@@ -50,20 +50,26 @@ $(TARGET):
 #clang++ $(TARGET_CPP) -o $(TARGET_EXE)
 m:
 	clang++ makein.cpp -o makein.out
+mt:
+	g++-9 test.cpp -o test.out
 v:
 	vi $(TARGET_CPP)
+vt:
+	vi test.cpp
+vm:
+	vi makein.cpp
 vin:
 	$(call in_txt,$(RUN_ARGS))
 vout:
 	$(call out_txt,$(RUN_ARGS))
-vm:
-	vi makein.cpp
 e:
 	./$(TARGET_EXE)
 ed:
 	$(call diff,$(RUN_ARGS))
 em:
 	./makein.out
+et:
+	./test.out
 c:
 	rm $(TARGET_EXE)
 cm:

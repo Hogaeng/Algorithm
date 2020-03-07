@@ -12,13 +12,20 @@ TARGET_CPP	Makefile	/^TARGET_CPP = $(TARGET).cpp$/;"	m
 TARGET_EXE	Makefile	/^TARGET_EXE = $(TARGET).out$/;"	m
 TARGET_IN	Makefile	/^TARGET_IN = $(TARGET)_in$/;"	m
 TARGET_OUT	Makefile	/^TARGET_OUT = $(TARGET)_out$/;"	m
+answer	baseball.cpp	/^vector<int> answer[2] = {{3,1,2,4,4,2,3,1,0},{2,4,3,1,2,4,3,0,1}};$/;"	v
+chek	baseball.cpp	/^bool chek(){$/;"	f
 debug	baseball.cpp	/^#define debug$/;"	d	file:
 diff	Makefile	/^define diff$/;"	m
 firstw	Makefile	/^firstw = $(firstword $(MAKECMDGOALS))$/;"	m
 in_txt	Makefile	/^define in_txt$/;"	m
 main	baseball.cpp	/^int main(){$/;"	f
+main	test.cpp	/^int main(void){$/;"	f
 n	baseball.cpp	/^int n;$/;"	v
 out_txt	Makefile	/^define out_txt$/;"	m
 player	baseball.cpp	/^vector<int> player[50];$/;"	v
-rearrange	baseball.cpp	/^void rearrange(int ind,int indj){$/;"	f
-simul	baseball.cpp	/^int simul(int ind, int &indj){$/;"	f
+printn	baseball.cpp	/^void printn(int endi){$/;"	f
+recur_p	baseball.cpp	/^int recur_p(int lev){$/;"	f
+simul	baseball.cpp	/^int simul(int ind,int &indj){$/;"	f
+swap	baseball.cpp	/^void swap(int i, int j){$/;"	f
+taza	baseball.cpp	/^vector<int> taza;$/;"	v
+z	baseball.cpp	/^int z;$/;"	v
