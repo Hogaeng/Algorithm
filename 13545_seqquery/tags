@@ -9,6 +9,7 @@ FILENAME	seq.old.cpp	/^#define FILENAME /;"	d	file:
 FILE_CIN	seq.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	seq.old.cpp	/^#define FILE_CIN$/;"	d	file:
 N	makein.cpp	/^#define N /;"	d	file:
+Query	seq.cpp	/^struct Query{$/;"	s	file:
 Query	test_sqrt_decomposition.cpp	/^struct Query{$/;"	s	file:
 RUN_ARGS	Makefile	/^  RUN_ARGS := $(word 2,$(MAKECMDGOALS))$/;"	m
 TARGET	Makefile	/^TARGET = seq$/;"	m
@@ -16,25 +17,32 @@ TARGET_CPP	Makefile	/^TARGET_CPP = $(TARGET).cpp$/;"	m
 TARGET_EXE	Makefile	/^TARGET_EXE = $(TARGET).out$/;"	m
 TARGET_IN	Makefile	/^TARGET_IN = $(TARGET)_in$/;"	m
 TARGET_OUT	Makefile	/^TARGET_OUT = $(TARGET)_out$/;"	m
-c	seq.cpp	/^bool c[100000]={0,};$/;"	v
+c	seq.cpp	/^bool c[100000];$/;"	v
 c	seq.old.cpp	/^bool c[100000];$/;"	v
 checkit	seq.old.cpp	/^int checkit(int k, int l){$/;"	f
+cn	seq.cpp	/^int cn;$/;"	v
+csqt	seq.cpp	/^int csqt[400]={0,};$/;"	v
 debug	seq.cpp	/^#define debug$/;"	d	file:
 debug	seq.old.cpp	/^#define debug$/;"	d	file:
-findit	seq.cpp	/^int findit(int t1,int t2){$/;"	f
+diff	Makefile	/^define diff$/;"	m
+findit	seq.cpp	/^void findit(){$/;"	f
+firstw	Makefile	/^firstw = $(firstword $(MAKECMDGOALS))$/;"	m
+hi	seq.cpp	/^    int hi;$/;"	m	struct:Query	file:
 hi	test_sqrt_decomposition.cpp	/^    int hi;$/;"	m	struct:Query	file:
 in_txt	Makefile	/^define in_txt$/;"	m
+init	seq.cpp	/^void init(){$/;"	f
+lo	seq.cpp	/^    int lo;$/;"	m	struct:Query	file:
 lo	test_sqrt_decomposition.cpp	/^    int lo;$/;"	m	struct:Query	file:
 lookup	seq.old.cpp	/^vector<int> lookup[100000];$/;"	v
 main	makein.cpp	/^int main(){$/;"	f
 main	seq.cpp	/^int main(){$/;"	f
 main	seq.old.cpp	/^int main(){$/;"	f
 main	test_sqrt_decomposition.cpp	/^int main(void){$/;"	f
-makeit	seq.cpp	/^void makeit(){$/;"	f
 makelook_dfs	seq.old.cpp	/^void makelook_dfs(int lev, int idx){$/;"	f
-n	seq.cpp	/^int n,qn;$/;"	v
+n	seq.cpp	/^int n;$/;"	v
 n	seq.old.cpp	/^int n;$/;"	v
+out_txt	Makefile	/^define out_txt$/;"	m
 printlook	seq.old.cpp	/^void printlook(){$/;"	f
-q	seq.cpp	/^int q[105]={0,};\/\/구간의 합$/;"	v
-qn	seq.cpp	/^int n,qn;$/;"	v
-qs	seq.cpp	/^int qs[105]={0,};\/\/구간의 순서$/;"	v
+q	seq.cpp	/^vector<Query> q;$/;"	v
+qn	seq.cpp	/^int qn;$/;"	v
+sz	seq.cpp	/^int sz;$/;"	v

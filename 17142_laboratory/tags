@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FILENAME	labor.cpp	/^#define FILENAME /;"	d	file:
+FILE_CIN	labor.cpp	/^#define FILE_CIN$/;"	d	file:
+RUN_ARGS	Makefile	/^  RUN_ARGS := $(word 2,$(MAKECMDGOALS))$/;"	m
+TARGET	Makefile	/^TARGET = labor$/;"	m
+TARGET_CPP	Makefile	/^TARGET_CPP = $(TARGET).cpp$/;"	m
+TARGET_EXE	Makefile	/^TARGET_EXE = $(TARGET).out$/;"	m
+TARGET_IN	Makefile	/^TARGET_IN = $(TARGET)_in$/;"	m
+TARGET_OUT	Makefile	/^TARGET_OUT = $(TARGET)_out$/;"	m
+bfs	labor.cpp	/^int bfs(){$/;"	f
+board	labor.cpp	/^int board[50][50];$/;"	v
+check	labor.cpp	/^bool check(int cb[50][50]){$/;"	f
+comb	labor.cpp	/^void comb(int ind, int lev){$/;"	f
+debug	labor.cpp	/^#define debug$/;"	d	file:
+diff	Makefile	/^define diff$/;"	m
+dir	labor.cpp	/^int dir[4][2]={$/;"	v
+firstw	Makefile	/^firstw = $(firstword $(MAKECMDGOALS))$/;"	m
+in_txt	Makefile	/^define in_txt$/;"	m
+main	labor.cpp	/^int main(){$/;"	f
+mini	labor.cpp	/^int mini=INT_MAX;$/;"	v
+n	labor.cpp	/^int n;$/;"	v
+out_txt	Makefile	/^define out_txt$/;"	m
+printsel	labor.cpp	/^void printsel(){$/;"	f
+r	labor.cpp	/^int r;$/;"	v
+sel	labor.cpp	/^vector<int> sel;$/;"	v
+vir	labor.cpp	/^vector<int> vir;$/;"	v
+z	labor.cpp	/^int z;$/;"	v

@@ -50,6 +50,7 @@ void bfs(int i,int j,int cl){
     }
 }
 bool check(vector<int> &choice){
+    //Island bridge lookup table
     vector<int> conn[7];
     //max num island is 6
     //start at 1, 
@@ -57,6 +58,8 @@ bool check(vector<int> &choice){
 	conn[choice[i]].push_back(choice[i+1]);
 	conn[choice[i+1]].push_back(choice[i]);
     }
+    //bfs로 모든 섬이 이어지는지 확인
+    //모든 섬에서부터 하나씩 시작해본다.
     vector<int> q;
     for(int i=1;i<cn;i++){
 	bool visited[7]={0,};
@@ -67,11 +70,15 @@ bool check(vector<int> &choice){
 	    int tmp=q[0];
 	    q.erase(q.begin());
 	    for(int j=0;j<conn[tmp].size();j++){
+		//다음 방문한 섬이 방문하지 않은 새로운 섬이면
+		//방문했다는 표시를 하고 큐에 집어넣는다.
 		if(!visited[conn[tmp][j]]){
-		    q.push_back(conn[tmp][j]);
 		    visited[conn[tmp][j]]=true;
+		    q.push_back(conn[tmp][j]);
 		}
 	    }
+	    //방문한 섬은 세어준다.
+	    //여기서 세어줘도 새로 방문한 곳만 센다.
 	    cnt++;
 	}
 	if(cnt==cn)
@@ -83,6 +90,7 @@ int comb (int lev,int ind,vector<vector<int> > &brr, vector<vector<int> > &brc, 
     if(lev==0){
 	int tmp=0;
 	vector<int> checker;
+	//섬이 이어진 시작, 끝을 checker에 넣기
 	for(int i=0;i<choice.size();i++){
 	    if(choice[i]<brr.size()){
 		checker.push_back(brr[choice[i]][0]);
@@ -95,6 +103,7 @@ int comb (int lev,int ind,vector<vector<int> > &brr, vector<vector<int> > &brc, 
 		tmp+=brc[choice[i]-brr.size()][2];
 	    }
 	}
+	//모든 섬이 이어지는지 확인
 	if(check(checker))
 	    return tmp;
 	else
@@ -155,6 +164,7 @@ void makeit(vector<vector<int> > &brp, bool iscolum){
     }
 }
 void bridges(){
+    //모든 다리 그리기
     vector<vector<int> > brr;
     vector<vector<int> > brc;
     //printb();
@@ -169,6 +179,7 @@ void bridges(){
 	cout<<brc[i][0]<<' '<<brc[i][1]<<' '<<brc[i][2]<<endl;
     */
 
+    //다리 조합 하기
     int mini=INT_MAX;
     for(int i=1;i<=brc.size()+brr.size();i++){
 	vector<int> checker;
@@ -180,7 +191,7 @@ void bridges(){
 	cout<<-1<<endl;
 }
 void color(){
-    
+    //섬에 색칠하는 코드
     int cnt=1;
     for(int i=0;i<n;i++)
 	for(int j=0;j<m;j++)

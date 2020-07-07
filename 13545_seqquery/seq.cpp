@@ -1,35 +1,77 @@
 #include<iostream>
 #include<cmath>
+#include<vector>
 #define debug
 #define FILENAME "seq_in.txt"
 #define FILE_CIN
 
 using namespace std;
-int qb[400]={0,};//구간의 시작 
-int qe[400]={0,};//구간의 끝
-int qv[400]={0,};//구간의 값
-//int qi[400]={0,};//구간의 순서
-bool c[100000]={0,};
-int n,qn,qs;
+struct Query{
+    int lo;
+    int hi;
+};
+int n;
+bool c[100000];
 
-void makeit(){
-    qn=sqrt(n);
-    qs=n-qn*qn;
-    for(int i=0;i<qn;i++){
-	int cnt=0;
-	int j;
-	for(j=0;i==qn-1?j<qn:j<qn+qs;j++){
-	    cnt+=c[i*qn+j];
-	}
-	qb[i]=i*qn;
-	qe[i]=i*qn+j-1;
-	qv[i]=cnt;
+int sz;
+
+int cn;
+int csqt[400]={0,};
+
+int qn;
+vector<Query> q;
+
+void init(){
+    sz=sqrt(n);
+    for(int i=0;i<sz;i++)
+	csqt[i]=0;
+    for(int i=0;i<n;i++){
+	if(c[i])
+	    csqt[i/sz]+=1;
+	else
+	    csqt[i/sz]+=-1;
     }
+    if(sz*sz<n)
+	cn=sz+1;
+    else
+	cn=sz;
+
+    for(int i=0;i<cn;i++)
+	cout<<csqt[i]<<' ';
+    cout<<endl;
 }
-int findit(int t1,int t2){
-    int b=t1/qn,e=t2/qn;
-    int cnt=qv[b]+qe[e];
-    return cnt;
+void findit(){
+    for(int i=0;i<qn;i++){
+	int res=0;
+	int lo=q[i].lo;
+	int hi=q[i].hi;
+	int l=q[i].lo/sz;
+	int h=q[i].hi/sz;
+
+	int st0ind=-1, end0ind=-1;
+	int cnt0=0;
+	int tst,tend,tcnt=0;
+	for(int j=l;j<=h;j++){
+	    if(csqt[j]==0){
+		if(tcnt==0)
+		    tst=j;
+		tend=j;
+		tcnt++;
+	    }
+	    else{
+		if(tcnt>0){
+		    if(cnt0<tcnt){
+			cnt0=tcnt;
+			st0ind=tst;
+			end0ind=tend;
+		    }
+		    tcnt=0;
+		}
+	    }
+	}
+	//cout<<st0ind<<' '<<end0ind<<' '<<cnt0<<endl;
+	for(int i=0;i<
+    }
 }
 int main(){
 #ifdef FILE_CIN
@@ -47,16 +89,19 @@ int main(){
 	    else
 		c[i]=false;
 	}
-	makeit();
-	int s;
-	cin>>s;
-	for(int i=0;i<s;i++){
-	    int t1,t2;
-	    cin>>t1;
-	    cin>>t2;
-	    cout<<findit(t1,t2)<<endl;
+	cin>>qn;
+	for(int i=0;i<qn;i++){
+	    Query tq;
+	    cin>>tq.lo;
+	    cin>>tq.hi;
+	    tq.lo--;
+	    tq.hi--;
+	    q.push_back(tq);
 	}
+	init();
+	findit();
 #ifdef FILE_CIN
+	cout<<endl;
     }
 #endif
     return 0;

@@ -1,0 +1,5 @@
+#!/bin/bash
+#echo "Total Param= $#,  PROG: $0, param1 = $1, param2 = $2";
+a=1
+b=0
+echo $[a && b]

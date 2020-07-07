@@ -16,7 +16,7 @@
 
 #m c : 실행파일 삭제.
 #m cm: makein 실행파일 삭제.
-TARGET = baseball
+TARGET = labor
 TARGET_CPP = $(TARGET).cpp
 TARGET_EXE = $(TARGET).out
 TARGET_OUT = $(TARGET)_out
@@ -46,11 +46,11 @@ endif
 
 $(TARGET):
 	ctags -R
-	g++-9 $(TARGET_CPP) -o $(TARGET_EXE)
+	g++-9 $(TARGET_CPP) -o $(TARGET_EXE) -g
 #clang++ $(TARGET_CPP) -o $(TARGET_EXE)
-cm:
+m:
 	clang++ makein.cpp -o makein.out
-ct:
+mt:
 	g++-9 test.cpp -o test.out
 v:
 	vi $(TARGET_CPP)
@@ -70,3 +70,7 @@ em:
 	./makein.out
 et:
 	./test.out
+c:
+	rm $(TARGET_EXE)
+cm:
+	rm makein.out

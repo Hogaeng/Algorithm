@@ -5,7 +5,7 @@
 #include<math.h>
 #include<limits.h>
 #define FILE_CIN
-#define FILE_NAME "baby_in7.txt"
+#define FILE_NAME "baby_in.txt"
 //#define debug_z 1
 //#define debug
 using namespace std;
