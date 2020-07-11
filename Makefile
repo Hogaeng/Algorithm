@@ -51,7 +51,7 @@ $(TARGET):
 cm:
 	clang++ makein.cpp -o makein.out
 ct:
-	g++-9 test.cpp -o test.out
+	clang++ test.cpp -o test.out
 v:
 	vi $(TARGET_CPP)
 vt:
