@@ -1,14 +1,25 @@
 #!/bin/bash
 if [ -z "$target" ]; then
     echo "NO target"
-    echo $target
+    exit 1
+fi
+if [ -z "$targetn" ]; then
+    echo "NO targetn"
     exit 1
 fi
 
-targetout=$target"_out"
-targetin=$target"_in"
-targetcpp=$target".cpp"
-targetexe=$target".out"
+targetfol=$targetn"_"$target/
+targetout=$targetfol$target"_out"
+targetin=$targetfol$target"_in"
+targetcpp=$targetfol$target".cpp"
+targetexe=$targetfol$target".out"
+makeincpp=$targetfol"makein.cpp"
+makeinexe=$targetfol"makein.out"
+testcpp=$targetfol"test.cpp"
+testexe=$targetfol"test.out"
+
+if ! [ -d $targetfol ]; then
+    mkdir targetfol
 
 if [[ $# > 0 ]]; then
     if [ $1 == "vin" ]; then
@@ -24,9 +35,9 @@ if [[ $# > 0 ]]; then
 	    ./$targetexe |diff $targetout.txt -
 	fi
     elif [ $1 == "em" ]; then
-	clang++ makein.cpp -o makein.out -g
+	./$makeinexe
     elif [ $1 == "et" ]; then
-	clang++ test.cpp -o test.out -g
+	./$testexe
     elif [ $1 == "v" ]; then
 	vi $targetcpp
     elif [ $1 == "vm" ]; then
@@ -34,9 +45,9 @@ if [[ $# > 0 ]]; then
     elif [ $1 == "vt" ]; then
 	vi test.cpp
     elif [ $1 == "cm" ]; then
-	clang++ makein.cpp -o makin.out -g
+	clang++ $makeincpp -o $makinexe -g
     elif [ $1 == "ct" ]; then
-	clang++ test.cpp -o test.out -g
+	clang++ $testcpp -o $testexe -g
     fi
 else
     ctags -R
