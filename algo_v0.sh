@@ -3,23 +3,15 @@ if [ -z "$target" ]; then
     echo "NO target"
     exit 1
 fi
-if [ -z "$targetn" ]; then
-    echo "NO targetn"
-    exit 1
-fi
 
-targetfol=$targetn"_"$target/
-targetout=$targetfol$target"_out"
-targetin=$targetfol$target"_in"
-targetcpp=$targetfol$target".cpp"
-targetexe=$targetfol$target".out"
-makeincpp=$targetfol"makein.cpp"
-makeinexe=$targetfol"makein.out"
-testcpp=$targetfol"test.cpp"
-testexe=$targetfol"test.out"
-
-if ! [ -d $targetfol ]; then
-    mkdir targetfol
+targetout=$target"_out"
+targetin=$target"_in"
+targetcpp=$target".cpp"
+targetexe=$target".out"
+makeincpp="makein.cpp"
+makeinexe="makein.out"
+testcpp="test.cpp"
+testexe="test.out"
 
 if [[ $# > 0 ]]; then
     if [ $1 == "vin" ]; then
