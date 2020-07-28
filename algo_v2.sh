@@ -37,6 +37,9 @@ else
     exit 1
 fi
 
+if ! [ -d $targetfol ]; then
+    mkdir $targetfol
+fi
 if ! [ -f $targetfff ]; then
     if [ "$targete" == "java" ]; then
 	touch $targetfff
@@ -47,9 +50,6 @@ if ! [ -f $targetfff ]; then
 	    sed -i '' '3s/format/'$target'/' $targetfff
 	fi
     fi
-fi
-if ! [ -d $targetfol ]; then
-    mkdir $targetfol
 fi
 
 targetexe=$targetfol/$target$targetexe_e
