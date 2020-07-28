@@ -1,16 +1,18 @@
 # 알고리즘
-
-v2 : cpp 뿐만 아니라 java, py 파일도 접근 및 생성 가능. 새로운 환경변수 targete를 지정해야 함.(테스트중)
-v1 : 상위 폴더에서 글로벌하게 접근할 수 있도록 변경. 새로운 환경변수 targetn을 지정해야 함.(테스트중)
+v2 : cpp 뿐만 아니라 java, py 파일도 접근 및 생성 가능. 새로운 환경변수 targete를 지정해야 함.
+v1 : 상위 폴더에서 글로벌하게 접근할 수 있도록 변경. 새로운 환경변수 targetn을 지정해야 함.
 v0 : 일일이 알고리즘 폴더를 만든 뒤 해당폴더에서 실행문을 실행시켜야 작동됨.
 
 ## 알고리즘 폴더 소개
-숫자로 시작하는 폴더는 백준의 알고리즘 내용이고,
+숫자로 시작하는 폴더는 백준의 알고리즘 입니다.
 해시로 시작하는 폴더는 SW Expert academy 알고리즘입니다.
+p로 시작하는 폴더는 프로그래머스 알고리즘 입니다.
 
 >16236_babyshark 에서 16236은 <https://www.acmicpc.net/problem/16236> 을 의미한다. 접속하면 아기상어 문제라는 것을 알 수 있다.
 
 >AWXRQm6qfL0DFAUo_breakbrick 에서 AWXRQm6qfL0DFAUo는<https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRQm6qfL0DFAUo> 를 의미한다. 접속하면 벽돌깨기 문제라는 것을 알 수 있다.
+
+>p_12987_numgame 에서 12987은 <https://programmers.co.kr/learn/courses/30/lessons/12987> 을 의미한다. 접속하면 숫자게임 문제라는 것을 알 수 있다.
 
 ## 단축키 설정
 Makefile, algo.sh는 vim 명령어를 보다 간결하게 입력하기 위해 만든 간단한 스크립트이다.
@@ -19,6 +21,16 @@ Makefile 사용법 :
 1. 원하는 폴더에 Makefile 복사본을 붙여넣기
 2. Makefile을 열고 target값을 지정한다.
 3. ~/.bash_profile 에서 alias m='make'를 입력후 source ~/bash_profile.
+```
+
+```
+algo.sh 사용법 Quick Start :
+
+echo alias m='~/algo.sh'>>~/.bash_profile
+./activate
+config 작성
+source config
+그 이후 config만 다루면 됨
 ```
 
 ```
@@ -42,13 +54,15 @@ ${target}_out.txt는 babyshark_out.txt
 
 설정이 끝나면 아래와 같은 명령어를 사용 할 수 있다.
 ```
-m : ${target}.cpp 파일을 ${target}.out을 컴파일한다
-m cm : makein.cpp 파일을 컴파일한다.
-m ct : test.cpp 파일을 컴파일한다.
+m l : target 알고리즘 폴더에 들어있는 파일 목록을 볼 수 있다.(v2 전용)
 
 m v : ${target}.cpp를 vi 편집기로 실행한다.
 m vm: makein.cpp를 vi 편집기로 실행한다.
 m vt: test.cpp를 vi 편집기로 실행한다.
+
+m : ${target}.cpp 파일을 ${target}.out을 컴파일한다
+m cm : makein.cpp 파일을 컴파일한다.
+m ct : test.cpp 파일을 컴파일한다.
 
 m vin # : ${target}_in#.txt를 vi 편집기로 실행한다.(#은 옵션인자이며 숫자)
 m vout # : ${target}_out#.txt를 vi 편집기로 실행한다.(#은 옵션인자이며 숫자)
@@ -57,6 +71,7 @@ m e : ${target}.out을 실행한다.
 m em : makein.out을 실행한다.
 m et : test.out을 실행한다.
 m ed # : diff를 실행하여 ${target}.out의 결과와 ${target}_out#.txt 비교한다.
+
 ```
 ## format.cpp 설명
 format을 원하는 이름으로 대체하여 사용한다. 예)format.cpp -> baby.cpp  

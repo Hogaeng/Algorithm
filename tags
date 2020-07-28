@@ -57,6 +57,7 @@ FILENAME	17837_zabdrone/zabdrone.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	AWXRQm6qfL0DFAUo_breakbrick/breakbrick.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	format.cpp	/^#define FILENAME /;"	d	file:
+FILENAME	p_12987_numgame/numgame.cpp	/^#define FILENAME /;"	d	file:
 FILE_CIN	13545_seqquery/seqquery.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	13545_seqquery/seqquery.old.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	13546_seq4/seq4.cpp	/^#define FILE_CIN$/;"	d	file:
@@ -79,6 +80,7 @@ FILE_CIN	17837_zabdrone/zabdrone.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	AWXRQm6qfL0DFAUo_breakbrick/breakbrick.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	format.cpp	/^#define FILE_CIN$/;"	d	file:
+FILE_CIN	p_12987_numgame/numgame.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_NAME	15683_observation/observation.cpp	/^#define FILE_NAME /;"	d	file:
 FILE_NAME	16236_babyshark/baby.java	/^	static final String FILE_NAME = "baby_in2.txt";$/;"	f	class:baby
 FILE_NAME	16236_babyshark/babyshark.cpp	/^#define FILE_NAME /;"	d	file:
@@ -89,7 +91,6 @@ GetState	17825_yut/yut.new1.cpp	/^STATE GetState(int Idx, int C_Idx)$/;"	f
 H	15686_chicken/chicken.old.cpp	/^enum {B,H,C};$/;"	e	enum:__anon13	file:
 H	AWXRQm6qfL0DFAUo_breakbrick/breakbrick.cpp	/^int N,W,H;$/;"	v
 HOLE	13460_biz/biz.cpp	/^enum {RED, BLACK, HOLE, SHARP, DOT};$/;"	e	enum:__anon9	file:
-HelloWorld	format.java	/^public class HelloWorld {$/;"	c
 Input	17825_yut/yut.new1.cpp	/^void Input()$/;"	f
 Item	16236_babyshark/baby.java	/^		Item(int x, int y, int move) {$/;"	m	class:baby.Item
 Item	16236_babyshark/baby.java	/^	static class Item {$/;"	c	class:baby
@@ -422,6 +423,7 @@ debug	17825_yut/yut.old.cpp	/^#define debug$/;"	d	file:
 debug	17837_zabdrone/zabdrone.cpp	/^#define debug$/;"	d	file:
 debug	AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^#define debug$/;"	d	file:
 debug	format.cpp	/^#define debug$/;"	d	file:
+debug	p_12987_numgame/numgame.cpp	/^#define debug$/;"	d	file:
 demolish	AWXRQm6qfL0DFAUo_breakbrick/breakbrick.cpp	/^void demolish(int **cbrick, int x, int y){$/;"	f
 depth	13460_biz/biz.other.cpp	/^	int depth;$/;"	m	struct:balls	file:
 dfs	15686_chicken/test.cpp	/^void dfs(int depth,int x,int y){$/;"	f
@@ -532,7 +534,6 @@ init	13460_biz/biz.c	/^void init(int row, int col, char board[row][col]){$/;"	f
 init	13545_seqquery/seqquery.cpp	/^void init(){$/;"	f
 init	16236_babyshark/baby.java	/^		static void init() {$/;"	m	class:baby.sc
 initboard	13460_biz/biz.cpp	/^void initboard(Board &board)$/;"	f
-initefunc	algo_v2.sh	/^function initefunc$/;"	f
 input	17825_yut/yut.cpp	/^int input[10]={0,};$/;"	v
 inter	14891_gear/gear.cpp	/^int inter[3][2][2]={$/;"	v
 isallstuff	AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^void isallstuff(){$/;"	f
@@ -625,11 +626,16 @@ main	AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^int main(){$/;"	f
 main	AWm8gU7KljcDFASj_UIonedayDate/test.cpp	/^int main(void){$/;"	f
 main	basic/perm.cpp	/^int main(void){$/;"	f
 main	format.cpp	/^int main(){$/;"	f
-main	format.java	/^    public static void main(String args[]) {$/;"	m	class:HelloWorld
 main	if_number_of_array_set_one/test.cpp	/^int main(void){$/;"	f
+main	p_12987_numgame/makein.java	/^    public static void main(String args[]) {$/;"	m	class:makein
+main	p_12987_numgame/numgame.cpp	/^int main(){$/;"	f
+main	p_12987_numgame/numgame.java	/^    public static void main(String args[]) {$/;"	m	class:numgame
+main	p_12987_numgame/test.java	/^    public static void main(String args[]) {$/;"	m	class:test
 makeboard	15686_chicken/chicken.old.cpp	/^void makeboard(){$/;"	f
 makeboardsub	15686_chicken/chicken.old.cpp	/^void makeboardsub(){$/;"	f
 makedst	14888_operator/operator.cpp.cpp	/^void makedst(short &c, int n,int dst){$/;"	f
+makefile	algo_v2.sh	/^makefile(){$/;"	f
+makein	p_12987_numgame/makein.java	/^public class makein {$/;"	c
 makeit	17472_bridge/bridge.cpp	/^void makeit(vector<vector<int> > &brp, bool iscolum){$/;"	f
 makelook_dfs	13545_seqquery/seqquery.old.cpp	/^void makelook_dfs(int lev, int idx){$/;"	f
 makepath	replace.py	/^def makepath(lia, lib):$/;"	f
@@ -675,12 +681,14 @@ nextInt	16236_babyshark/baby.java	/^		static int nextInt() {$/;"	m	class:baby.sc
 nextLong	16236_babyshark/baby.java	/^		static long nextLong() {$/;"	m	class:baby.sc
 num	14888_operator/operator.cpp	/^int num[11];$/;"	v
 num	14890_tilt/tilt.cpp	/^int num=0;$/;"	v
+numgame	p_12987_numgame/numgame.java	/^public class numgame {$/;"	c
 ocean	16236_babyshark/babyshark.cpp	/^int ocean[20][20] ={0,};$/;"	v
 oper	14888_operator/operator.cpp	/^int oper[10];$/;"	v
 operator +	13546_seq4/test3.cpp	/^    bool operator+(const Q){$/;"	f	struct:Q
 operator <	13546_seq4/test2.cpp	/^    bool operator<(Q q) const{$/;"	f	struct:Q
 opercnt	14888_operator/operator.cpp	/^int opercnt[4];$/;"	v
 os	format.py	/^import os$/;"	i
+os	p_12987_numgame/numgame.py	/^import os$/;"	i
 ot	replace.py	/^ot = ["if_number_of_array_set_one","basic",".git"]$/;"	v
 out_txt	13545_seqquery/Makefile	/^define out_txt$/;"	m
 out_txt	13546_seq4/Makefile	/^define out_txt$/;"	m
@@ -697,6 +705,9 @@ out_txt	17837_zabdrone/Makefile	/^define out_txt$/;"	m
 out_txt	AWXRQm6qfL0DFAUo_breakbrick/Makefile	/^define out_txt$/;"	m
 out_txt	AWm8gU7KljcDFASj_UIonedayDate/Makefile	/^define out_txt$/;"	m
 out_txt	Makefile	/^define out_txt$/;"	m
+p_12987_numgame	p_12987_numgame/makein.java	/^package p_12987_numgame;$/;"	p
+p_12987_numgame	p_12987_numgame/numgame.java	/^package p_12987_numgame;$/;"	p
+p_12987_numgame	p_12987_numgame/test.java	/^package p_12987_numgame;$/;"	p
 perm	basic/perm.cpp	/^void perm(int lev, int m, int n, vector<int> vec, int check[10]){$/;"	f
 perm2	basic/perm.cpp	/^void perm2(int lev, int m, int n, vector<int> vec){$/;"	f
 permrepet	17472_bridge/test.cpp	/^void permrepet(int r,int c, int lev,int check[10]){$/;"	f
@@ -820,6 +831,7 @@ tboard	15683_observation/observation.cpp	/^int tboard[8][8];$/;"	v
 tdir	3190_snake/snake.cpp	/^	int tdir;$/;"	m	struct:Part	file:
 tdir	3190_snake/snake.old.cpp	/^	int tdir;$/;"	m	struct:Part	file:
 temp	16235_tree/javab/Program.java	/^	ArrayList<Integer> temp;$/;"	f	class:Program
+test	p_12987_numgame/test.java	/^public class test {$/;"	c
 time	16236_babyshark/baby.java	/^	static int N, cnt, targetX, targetY, targetSize = 2, time = 0;$/;"	f	class:baby
 treeCreate	16235_tree/javab/Program.java	/^	public void treeCreate(int x, int y, int z) {$/;"	m	class:Program
 treelist	16235_tree/javab/Program.java	/^	ArrayList<Tree> treelist;$/;"	f	class:Program

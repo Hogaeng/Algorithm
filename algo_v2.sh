@@ -12,38 +12,49 @@ targetfol=$targetn"_"$target
 targetout=$targetfol/$target"_out"
 targetin=$targetfol/$target"_in"
 targetfff=$targetfol/$target"."$targete
-targetold=$targetfol/$target".old"$targete
+targetold=$targetfol/$target".old."$targete
 makeinfff=$targetfol/"makein."$targete
 testfff=$targetfol/"test."$targete
 
+makefile(){
+    if ! [ -f $2 ]; then
+	echo "package "$targetfol\;>>$2
+	echo "public class "$1" {">>$2
+	echo "    public static void main(String args[]) {">>$2
+	echo "    }">>$2
+	echo "}">>$2
+    fi
+}
+
 if [ "$targete" == "cpp" ]; then
-    targetexe_e="out"
+    targetexe_e=".out"
 elif [ "$targete" == "java" ]; then
-    targetexe_e="class"
+    targetexe_e=""
 elif [ "$targete" == "py" ]; then
-    targetexe_e="py"
+    targetexe_e=".py"
 else
     echo "NO targete"
     exit 1
 fi
+
+if ! [ -f $targetfff ]; then
+    if [ "$targete" == "java" ]; then
+	touch $targetfff
+	makefile $target $targetfff
+    else
+	cp format.$targete $targetfff
+	if [ "$targete" == "cpp" ]; then
+	    sed -i '' '3s/format/'$target'/' $targetfff
+	fi
+    fi
+fi
 if ! [ -d $targetfol ]; then
     mkdir $targetfol
 fi
-if ! [ -f $targetfff ]; then
-    if [ "$targete" == "cpp" ]; then
-	cp format"."$1 $targetfff
-    elif [ "$targete" == "java" ]; then
-	touch $targetfff
-	echo "pubic class "$target" {">>$targetfff
-	echo "    public static void main(String args[]) {">>$targetfff
-	echo "    }">>$targetfff
-	echo "}">>$targetfff
-    fi
-fi
 
-targetexe=$targetfol/$target"."$trgetexe_e
-makeinexe=$targetfol/"makein."$targetexe_e
-testexe=$targetfol/"test."$targetexe_e
+targetexe=$targetfol/$target$targetexe_e
+makeinexe=$targetfol/"makein"$targetexe_e
+testexe=$targetfol/"test"$targetexe_e
 
 if [[ $# > 0 ]]; then
     if [ $1 == "vin" ]; then
@@ -82,29 +93,45 @@ if [[ $# > 0 ]]; then
 	elif [ "$targete" == "java" ]; then
 	    java $makeinexe
 	elif [ "$targete" == "py" ]; then
-	    python3 $testexe
+	    python3 $makeinexe
 	fi
     elif [ $1 == "et" ]; then
-	./$testexe
+	if [ "$targete" == "cpp" ]; then
+	    ./$testexe
+	elif [ "$targete" == "java" ]; then
+	    java $testexe
+	elif [ "$targete" == "py" ]; then
+	    python3 $testexe
+	fi
     elif [ $1 == "v" ]; then
 	vi $targetfff
-    elif [ $1 == "v" ]; then
-	vi $targetfff
+    elif [ $1 == "l" ]; then
+	ls $targetfol
     elif [ $1 == "vm" ]; then
+	if [ "$targete" == "java" ]; then
+	    makefile "makein" $makeinfff
+	fi
 	vi $makeinfff
     elif [ $1 == "vt" ]; then
+	if [ "$targete" == "java" ]; then
+	    makefile "test" $testfff
+	fi
 	vi $testfff
     elif [ $1 == "cm" ]; then
 	if [ "$targete" == "cpp" ]; then
 	    clang++ $makeinfff -o $makinexe -g
 	elif [ "$targete" == "java" ]; then
 	    javac $makeinfff
+	elif [ "$targete" == "py" ]; then
+	    python3 $makeinfff
 	fi
     elif [ $1 == "ct" ]; then
 	if [ "$targete" == "cpp" ]; then
 	    clang++ $testfff -o $testexe -g
 	elif [ "$targete" == "java" ]; then
 	    javac $testfff
+	elif [ "$targete" == "py" ]; then
+	    python3 $testfff
 	fi
     fi
 else

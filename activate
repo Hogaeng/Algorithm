@@ -1,0 +1,2 @@
+cp algo_v2.sh ~/algo.sh
+source ~/.bash_profile
