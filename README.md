@@ -1,6 +1,7 @@
 # 알고리즘
 
-v1 : 상위 폴더에서 글로벌하게 접근할 수 있도록 변경.  
+v2 : cpp 뿐만 아니라 java, py 파일도 접근 및 생성 가능. 새로운 환경변수 targete를 지정해야 함.(테스트중)
+v1 : 상위 폴더에서 글로벌하게 접근할 수 있도록 변경. 새로운 환경변수 targetn을 지정해야 함.(테스트중)
 v0 : 일일이 알고리즘 폴더를 만든 뒤 해당폴더에서 실행문을 실행시켜야 작동됨.
 
 ## 알고리즘 폴더 소개
@@ -24,17 +25,19 @@ Makefile 사용법 :
 algo.sh 사용법 :
 1. 최초 home 위치에 algo.sh를 옮긴다.
 2. ~/.bash_profile 에서 alias m='~/algo.sh'를 입력후 source ~/bash_profile.
-3. 원하는 target 값을 쉘에서 export target="원하는값"이라고 명령을 한다.
+3. 원하는 파일명을 target 환경변수에 지정. 쉘에서 export target="원하는값"이라고 명령을 한다. v1부터 사이트에 해당하는 숫자를 targetn에 추가로 지정. v2부터 원하는 파일 확장명을 targete에 추가로 지정(cpp, java, py만 지정)
 ```
 
 이후 기본적인 알고리즘 소스는 target으로 지정된 값과 같은 이름을 가진 파일을 다룬다.
 
 ```
-target=baby
-${target}.cpp는 baby.cpp
-${target}.out는 baby.out
-${target}_in.txt는 baby_in.txt
-${target}_out.txt는 baby_out.txt
+target=babyshark
+targetn=16236
+targete=cpp
+${target}.cpp는 babyshark.cpp
+${target}.out는 babyshark.out
+${target}_in.txt는 babyshark_in.txt
+${target}_out.txt는 babyshark_out.txt
 ```
 
 설정이 끝나면 아래와 같은 명령어를 사용 할 수 있다.

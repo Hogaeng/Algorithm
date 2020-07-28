@@ -8,21 +8,21 @@ if [ -z "$targetn" ]; then
     exit 1
 fi
 
-targetfol=$targetn"_"$target/
-targetout=$targetfol$target"_out"
-targetin=$targetfol$target"_in"
-targetcpp=$targetfol$target".cpp"
-targetold=$targetfol$target".old.cpp"
-targetexe=$targetfol$target".out"
-makeincpp=$targetfol"makein.cpp"
-makeinexe=$targetfol"makein.out"
-testcpp=$targetfol"test.cpp"
-testexe=$targetfol"test.out"
+targetfol=$targetn"_"$target
+targetout=$targetfol/$target"_out"
+targetin=$targetfol/$target"_in"
+targetcpp=$targetfol/$target".cpp"
+targetold=$targetfol/$target".old.cpp"
+targetexe=$targetfol/$target".out"
+makeincpp=$targetfol/"makein.cpp"
+makeinexe=$targetfol/"makein.out"
+testcpp=$targetfol/"test.cpp"
+testexe=$targetfol/"test.out"
 
 if ! [ -d $targetfol ]; then
     mkdir $targetfol
     cp format.cpp $targetcpp
-
+fi
 if [[ $# > 0 ]]; then
     if [ $1 == "vin" ]; then
 	vi $targetin$2.txt
@@ -45,9 +45,9 @@ if [[ $# > 0 ]]; then
     elif [ $1 == "v" ]; then
 	vi $targetcpp
     elif [ $1 == "vm" ]; then
-	vi makein.cpp
+	vi $makeincpp
     elif [ $1 == "vt" ]; then
-	vi test.cpp
+	vi $testcpp
     elif [ $1 == "cm" ]; then
 	clang++ $makeincpp -o $makinexe -g
     elif [ $1 == "ct" ]; then
