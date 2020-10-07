@@ -1,3 +1,5 @@
+./config
+
 $targetfol=$targetn+"_"+$target
 
 $targetout=$targetfol+"/"+$target+"_out"
@@ -14,9 +16,9 @@ $testexe=$targetfol+"/"+"test"+$targetexe_e
 
 if($targete -eq "cpp"){
     if($args[0] -eq "c"){
-        echo "g++ $testfff -o $testexe -g"
+        g++ $targetfff -o $targetexe -g
     }
     if($args[0] -eq "e"){
-        echo "./$testexe"
+        . $targetexe
     }
 }
