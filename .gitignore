@@ -1,3 +1,4 @@
 *.icloud
 *.dSYM
 .DS_Store
+.idea
