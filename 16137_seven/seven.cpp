@@ -3,7 +3,7 @@
 #include<algorithm>
 #include<climits>
 #define debug
-#define FILENAME "seven_in.txt"
+#define FILENAME "16137_seven/seven_in.txt"
 #define FILE_CIN
 using namespace std;
 int n;
