@@ -15,28 +15,27 @@ int cnt=1;
 bool check(int t){
 	for(int i=0;i<n;i++)
 		for(int j=0;j<n;j++)
-			if(drone_stack[i][j].size()==k){
-				cout<<' '<<cnt<<' '<<t<<' '<<i<<' '<<j<<endl;
+			if(drone_stack[i][j].size()==4){
 				return true;
 			}
 	return false;
-
 }
+
 bool moveit(int i){
 	int d=drone_dir[i],x=drone_coord[i].first,y=drone_coord[i].second;
 	int dx=dir[d][0],dy=dir[d][1];
 	vector<int> stack=drone_stack[x][y];
 	if(stack[0]==i){
 		if(x+dx>-1&&x+dx<n&&y+dy>-1&&y+dy<n){
-			if(board[x+dx][y+dy]==0){
+			if(board[x+dx][y+dy]==0){//하양
 				for(int i=0;i<stack.size();i++){
-					drone_stack[x+dx][y+dy].push_back(stack[i]);
 					drone_coord[stack[i]].first=x+dx;
 					drone_coord[stack[i]].second=y+dy;
+					drone_stack[x+dx][y+dy].push_back(stack[i]);
 				}
 				drone_stack[x][y].clear();
 			}
-			else if(board[x+dx][y+dy]==1){
+			else if(board[x+dx][y+dy]==2){//파랑
 				int rev_d;
 				if(d==0)
 					rev_d=1;
@@ -51,39 +50,40 @@ bool moveit(int i){
 				if(x+dx>-1&&x+dx<n&&y+dy>-1&&y+dy<n){
 					if(board[x+dx][y+dy]==0){
 						for(int i=0;i<stack.size();i++){
-							drone_stack[x+dx][y+dy].push_back(stack[i]);
 							drone_coord[stack[i]].first=x+dx;
 							drone_coord[stack[i]].second=y+dy;
+							drone_stack[x+dx][y+dy].push_back(stack[i]);
 						}
 						drone_stack[x][y].clear();
 					}
-					else if(board[x+dx][y+dy]==2){
+					else if(board[x+dx][y+dy]==1){
 						vector<int> rev_stack;
-						for(int j=stack.size()-1;j>-1;j--)
-							rev_stack.push_back(stack[j]);
+						for(int i=stack.size()-1;i>-1;i--)
+							rev_stack.push_back(stack[i]);
 
 						for(int i=0;i<rev_stack.size();i++){
-							drone_stack[x+dx][y+dy].push_back(rev_stack[i]);
 							drone_coord[rev_stack[i]].first=x+dx;
 							drone_coord[rev_stack[i]].second=y+dy;
+							drone_stack[x+dx][y+dy].push_back(rev_stack[i]);
 						}
 						drone_stack[x][y].clear();
 					}
 				}
 			}
-			else{
+			else{//빨강
 				vector<int> rev_stack;
 				for(int i=stack.size()-1;i>-1;i--)
 					rev_stack.push_back(stack[i]);
+
 				for(int i=0;i<rev_stack.size();i++){
-					drone_stack[x+dx][y+dy].push_back(rev_stack[i]);
 					drone_coord[rev_stack[i]].first=x+dx;
 					drone_coord[rev_stack[i]].second=y+dy;
+					drone_stack[x+dx][y+dy].push_back(rev_stack[i]);
 				}
 				drone_stack[x][y].clear();
 			}
 		}
-		else{
+		else{//벽넘어감
 			int rev_d;
 			if(d==0)
 				rev_d=1;
@@ -97,21 +97,22 @@ bool moveit(int i){
 			drone_dir[i]=rev_d;
 			if(x+dx>-1&&x+dx<n&&y+dy>-1&&y+dy<n){
 				if(board[x+dx][y+dy]==0){
-					for(int j=0;j<stack.size();j++){
-						drone_stack[x+dx][y+dy].push_back(stack[j]);
-						drone_coord[stack[j]].first=x+dx;
-						drone_coord[stack[j]].second=y+dy;
+					for(int i=0;i<stack.size();i++){
+						drone_coord[stack[i]].first=x+dx;
+						drone_coord[stack[i]].second=y+dy;
+						drone_stack[x+dx][y+dy].push_back(stack[i]);
 					}
 					drone_stack[x][y].clear();
 				}
-				else if(board[x+dx][y+dy]==2){
+				else if(board[x+dx][y+dy]==1){
 					vector<int> rev_stack;
-					for(int i=stack.size()-1;i>-1;i--)
-						rev_stack.push_back(stack[i]);
+					for(int j=stack.size()-1;j>-1;j--)
+						rev_stack.push_back(stack[j]);
+
 					for(int i=0;i<rev_stack.size();i++){
-						drone_stack[x+dx][y+dy].push_back(stack[i]);
-						drone_coord[stack[i]].first=x+dx;
-						drone_coord[stack[i]].second=y+dy;
+						drone_coord[rev_stack[i]].first=x+dx;
+						drone_coord[rev_stack[i]].second=y+dy;
+						drone_stack[x+dx][y+dy].push_back(rev_stack[i]);
 					}
 					drone_stack[x][y].clear();
 				}
@@ -143,9 +144,11 @@ int main(){
 		}
 		while(cnt<1001){
 			bool t=false;
-			for(int i=0;i<k;i++)
-				if((t=moveit(i)))
+			for(int i=0;i<k;i++){
+				t=moveit(i);
+				if(t)
 					break;
+			}
 			if(t)
 				break;
 			cnt++;
