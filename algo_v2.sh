@@ -48,6 +48,7 @@ if ! [ -f $targetfff ]; then
 		cp format.$targete $targetfff
 		if [ "$targete" == "cpp" ]; then
 			sed -i '' '3s/format/'$target'/' $targetfff
+			sed -i '' '3s/00000/'$targetn'/' $targetfff
 		fi
 	fi
 fi

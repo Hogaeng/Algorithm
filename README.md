@@ -27,7 +27,7 @@ Makefile 사용법 :
 algo_v2.sh 사용법 Quick Start :
 
 echo alias m='~/algo.sh'>>~/.bash_profile
-./activate
+./deployment
 config 작성
 source config
 그 이후 config만 다루면 됨

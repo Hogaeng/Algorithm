@@ -1,6 +1,6 @@
 #include<iostream>
 #define debug
-#define FILENAME "17780_format/format_in.txt"
+#define FILENAME "17780_yabdrone/format_in.txt"
 #define FILE_CIN
 using namespace std;
 int main(){
