@@ -44,6 +44,7 @@ FILENAME	13546_seq4/seq4.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	14502_labatory/labatory.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	15686_chicken/chicken.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	15686_chicken/chicken.old.cpp	/^#define FILENAME /;"	d	file:
+FILENAME	16137_seven/seven.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	16235_tree/tree.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	17070_pipe/pipe.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	17142_labor/labor.cpp	/^#define FILENAME /;"	d	file:
@@ -51,6 +52,7 @@ FILENAME	17281_baseball/baseball.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	17472_bridge/bridge.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	17779_gerythegathering/gerythegathering.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	17779_gerythegathering/gerythegathering.old.cpp	/^#define FILENAME /;"	d	file:
+FILENAME	17780_yabdrone/yabdrone.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	17825_yut/yut.new1.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	17825_yut/yut.old.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	17837_zabdrone/zabdrone.cpp	/^#define FILENAME /;"	d	file:
@@ -69,6 +71,7 @@ FILE_CIN	14502_labatory/labatory.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	15683_observation/observation.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	15686_chicken/chicken.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	15686_chicken/chicken.old.cpp	/^#define FILE_CIN$/;"	d	file:
+FILE_CIN	16137_seven/seven.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	16235_tree/tree.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	16236_babyshark/baby.java	/^	static final boolean FILE_CIN = true;$/;"	f	class:baby
 FILE_CIN	16236_babyshark/babyshark.cpp	/^#define FILE_CIN$/;"	d	file:
@@ -78,6 +81,7 @@ FILE_CIN	17281_baseball/baseball.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	17472_bridge/bridge.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	17779_gerythegathering/gerythegathering.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	17779_gerythegathering/gerythegathering.old.cpp	/^#define FILE_CIN$/;"	d	file:
+FILE_CIN	17780_yabdrone/yabdrone.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	17825_yut/yut.new1.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	17825_yut/yut.old.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	17837_zabdrone/zabdrone.cpp	/^#define FILE_CIN$/;"	d	file:
@@ -314,10 +318,12 @@ ans	17825_yut/yut.new.cpp	/^int ans, dice[10], h[4], score[4];$/;"	v
 answer	15683_observation/observation.cpp	/^#define answer /;"	d	file:
 answer	17281_baseball/baseball.cpp	/^vector<int> answer[2] = {{3,1,2,4,4,2,3,1,0},{2,4,3,1,2,4,3,0,1}};$/;"	v
 answernowdir	15683_observation/observation.cpp	/^int answernowdir[8]={0,0,0,0,0,0,0,0};$/;"	v
+b	16137_seven/seven.cpp	/^int b[10][10]={0,};$/;"	v
 b_md	AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^int b_md(int n){$/;"	f
 baby	16236_babyshark/baby.java	/^public class baby {$/;"	c
 balls	13460_biz/biz.other.cpp	/^	balls(int d, int rx, int ry, int bx,int by):depth(d),rx(rx),ry(ry),bx(bx),by(by){}$/;"	f	struct:balls
 balls	13460_biz/biz.other.cpp	/^struct balls {$/;"	s	file:
+bar	p_17676_chusuk/chusuk.cpp	/^vector<int> bar;$/;"	v
 bf	AWXRQm6qfL0DFAUo_breakbrick/breakbrick.cpp	/^int bf(int k, int **tbrick){$/;"	f
 bfs	15686_chicken/chicken.old.cpp	/^int bfs(){$/;"	f
 bfs	16236_babyshark/babyshark.cpp	/^int bfs(){$/;"	f
@@ -339,6 +345,7 @@ board	17142_labor/labor.cpp	/^int board[50][50];$/;"	v
 board	17472_bridge/bridge.cpp	/^int board[10][10];$/;"	v
 board	17779_gerythegathering/gerythegathering.cpp	/^int board[20][20]={0,};$/;"	v
 board	17779_gerythegathering/gerythegathering.old.cpp	/^int board[20][20];$/;"	v
+board	17780_yabdrone/yabdrone.cpp	/^int board[12][12]={0,};$/;"	v
 board	17825_yut/yut.old.cpp	/^int board[5][20]={$/;"	v
 board	17837_zabdrone/zabdrone.cpp	/^int board[12][12]={0,};$/;"	v
 boardis	17825_yut/yut.old.cpp	/^int boardis[16][4]={$/;"	v
@@ -375,7 +382,9 @@ check	15686_chicken/test.cpp	/^int map[50][50],dis[50][50],zero[50][50],check[50
 check	16234_population/population.cpp	/^void check(int tboard[50][50],int board[50][50],int i,int j, int n, const int L, const int R, int checknum)$/;"	f
 check	17142_labor/labor.cpp	/^bool check(int cb[50][50]){$/;"	f
 check	17472_bridge/bridge.cpp	/^bool check(vector<int> &choice){$/;"	f
+check	17780_yabdrone/yabdrone.cpp	/^bool check(int t){$/;"	f
 check	17825_yut/yut.old.cpp	/^int check(){$/;"	f
+check	p_17676_chusuk/chusuk.cpp	/^int check(int s, int e, int k){$/;"	f
 checkit	13545_seqquery/seqquery.old.cpp	/^int checkit(int k, int l){$/;"	f
 chek	17281_baseball/baseball.cpp	/^bool chek(){$/;"	f
 chekboarder	3190_snake/snake.cpp	/^bool chekboarder(vector<Part> &snake,int bn){$/;"	f
@@ -391,6 +400,7 @@ cnt	15686_chicken/chicken.cpp	/^int cnt=0;$/;"	v
 cnt	15686_chicken/test.cpp	/^int cnt=0;$/;"	v
 cnt	16236_babyshark/baby.java	/^	static int N, cnt, targetX, targetY, targetSize = 2, time = 0;$/;"	f	class:baby
 cnt	17070_pipe/pipe.cpp	/^int cnt=0;$/;"	v
+cnt	17780_yabdrone/yabdrone.cpp	/^int cnt=1;$/;"	v
 cnt	basic/perm.cpp	/^int cnt=0;$/;"	v
 cnt_EndCond	15684_ladder/ladder.cpp	/^int cnt_EndCond;$/;"	v
 cnt_dis	15686_chicken/test.cpp	/^void cnt_dis(){$/;"	f
@@ -422,6 +432,7 @@ debug	13545_seqquery/seqquery.old.cpp	/^#define debug$/;"	d	file:
 debug	13546_seq4/seq4.cpp	/^#define debug$/;"	d	file:
 debug	14502_labatory/labatory.cpp	/^#define debug$/;"	d	file:
 debug	15683_observation/observation.cpp	/^#define debug /;"	d	file:
+debug	16137_seven/seven.cpp	/^#define debug$/;"	d	file:
 debug	16235_tree/tree.old.cpp	/^#define debug$/;"	d	file:
 debug	17070_pipe/pipe.cpp	/^#define debug$/;"	d	file:
 debug	17142_labor/labor.cpp	/^#define debug$/;"	d	file:
@@ -429,6 +440,7 @@ debug	17281_baseball/baseball.cpp	/^#define debug$/;"	d	file:
 debug	17472_bridge/bridge.cpp	/^#define debug$/;"	d	file:
 debug	17779_gerythegathering/gerythegathering.cpp	/^#define debug$/;"	d	file:
 debug	17779_gerythegathering/gerythegathering.old.cpp	/^#define debug$/;"	d	file:
+debug	17780_yabdrone/yabdrone.cpp	/^#define debug$/;"	d	file:
 debug	17825_yut/yut.old.cpp	/^#define debug$/;"	d	file:
 debug	17837_zabdrone/zabdrone.cpp	/^#define debug$/;"	d	file:
 debug	AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^#define debug$/;"	d	file:
@@ -441,6 +453,7 @@ debug	p_42626_morehot/morehot.cpp	/^#define debug$/;"	d	file:
 demolish	AWXRQm6qfL0DFAUo_breakbrick/breakbrick.cpp	/^void demolish(int **cbrick, int x, int y){$/;"	f
 depth	13460_biz/biz.other.cpp	/^	int depth;$/;"	m	struct:balls	file:
 dfs	15686_chicken/test.cpp	/^void dfs(int depth,int x,int y){$/;"	f
+dfs	16137_seven/seven.cpp	/^int dfs(int i, int j, int t){$/;"	f
 dfs	17825_yut/yut.new.cpp	/^void dfs(int n)$/;"	f
 dice	14499_dice/dice.cpp	/^int dice[6]={0,};$/;"	v
 dice	17825_yut/yut.new.cpp	/^int ans, dice[10], h[4], score[4];$/;"	v
@@ -470,19 +483,25 @@ dir	16235_tree/tree.old.cpp	/^int dir[8][2]={{-1,0},{-1,1},{0,1},{1,1},{1,0},{1,
 dir	16236_babyshark/babyshark.cpp	/^int dir[4][2]={{-1,0},{0,-1},{0,1},{1,0}};$/;"	v
 dir	17142_labor/labor.cpp	/^int dir[4][2]={$/;"	v
 dir	17779_gerythegathering/gerythegathering.old.cpp	/^int dir[2][2]={$/;"	v
+dir	17780_yabdrone/yabdrone.cpp	/^const int dir[4][2]={{0,1},{0,-1},{-1,0},{1,0}};$/;"	v
 dir	17837_zabdrone/zabdrone.cpp	/^int dir[4][2]={$/;"	v
 dir	3190_snake/snake.cpp	/^int dir[4][2]={{0,1},{1,0},{0,-1},{-1,0}};\/\/ndir$/;"	v
 dir	3190_snake/snake.old.cpp	/^int dir[4][2]={{0,1},{1,0},{0,-1},{-1,0}};\/\/ndir$/;"	v
+dir	p_12946_hanoi/hanoi.cpp	/^int dir[6][3] = {$/;"	v
 dir_operate	15683_observation/observation.cpp	/^int dir_operate(int dirind, int operant,int pn){$/;"	f
 dirs	13546_seq4/test2/Makefile	/^dirs := a b c d$/;"	m
 dis	15686_chicken/test.cpp	/^int map[50][50],dis[50][50],zero[50][50],check[50][50];$/;"	v
 divide	14890_tilt/tilt.cpp	/^void divide(int index, int size){$/;"	f
+downs	16137_seven/seven.cpp	/^vector<pair<int,int> > downs;$/;"	v
 dp	AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^int dp[101][10][2][2][2][2][2][2][2][2][2][2]={0,};$/;"	v
 drawall	15683_observation/observation.cpp	/^int drawall(int N, int M){$/;"	f
 drawit	15683_observation/observation.cpp	/^void drawit(int dirind, int cctvind, int N, int M){$/;"	f
 drawl	17779_gerythegathering/gerythegathering.cpp	/^int drawl(int i,int j, int m, int n){$/;"	f
 drawlines	17779_gerythegathering/gerythegathering.old.cpp	/^int drawlines(int x, int y){$/;"	f
 drawone	15683_observation/observation.cpp	/^void drawone(int dirind, int cctvind, int N, int M){$/;"	f
+drone_coord	17780_yabdrone/yabdrone.cpp	/^vector<pair<int,int> > drone_coord;$/;"	v
+drone_dir	17780_yabdrone/yabdrone.cpp	/^vector<int> drone_dir;$/;"	v
+drone_stack	17780_yabdrone/yabdrone.cpp	/^vector<int> drone_stack[12][12];$/;"	v
 dx	15686_chicken/test.cpp	/^int dx[4]={0,1,0,-1},dy[4]={1,0,-1,0};$/;"	v
 dx	16236_babyshark/baby.java	/^	static int[] dx = { -1, 0, 1, 0 };$/;"	f	class:baby
 dy	15686_chicken/test.cpp	/^int dx[4]={0,1,0,-1},dy[4]={1,0,-1,0};$/;"	v
@@ -492,6 +511,7 @@ eat	16236_babyshark/babyshark.cpp	/^void eat(int x, int y){$/;"	f
 eatA	3190_snake/snake.cpp	/^void eatA(vector<Part> &snake,Part &tpart){$/;"	f
 eatA	3190_snake/snake.old.cpp	/^void eatA(vector<Part> &snake){$/;"	f
 eboard	15686_chicken/chicken.old.cpp	/^bool eboard[50][50]={0,};$/;"	v
+ended	p_17676_chusuk/chusuk.cpp	/^vector<int> ended;$/;"	v
 endl	17825_yut/yut.new1.cpp	/^#define endl /;"	d	file:
 eocean	16236_babyshark/babyshark.cpp	/^int eocean[20][20] ={0,};$/;"	v
 fall	16235_tree/javab/Program.java	/^	public void fall() {$/;"	m	class:Program
@@ -561,6 +581,7 @@ javab	16235_tree/javab/Tree.java	/^package javab;$/;"	p
 jb	14502_labatory/labatory.cpp	/^int ib,jb;$/;"	v
 k	16235_tree/tree.old.cpp	/^int n,m,k;$/;"	v
 k	17779_gerythegathering/gerythegathering.cpp	/^int k;$/;"	v
+k	17780_yabdrone/yabdrone.cpp	/^int n,k;$/;"	v
 k	17837_zabdrone/zabdrone.cpp	/^int k;$/;"	v
 le	17825_yut/yut.new.cpp	/^	ls = 50, le = 52$/;"	e	enum:turnel	file:
 lesser	AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^int lesser[] = {9,8,7,6,5,4,3,2,1,0};$/;"	v
@@ -573,10 +594,12 @@ lo	13545_seqquery/seqquery.cpp	/^    int lo;$/;"	m	struct:Query	file:
 lo	13545_seqquery/test_sqrt_decomposition.cpp	/^    int lo;$/;"	m	struct:Query	file:
 loc	17837_zabdrone/zabdrone.cpp	/^vector<int> loc[12][12];$/;"	v
 lookup	13545_seqquery/seqquery.old.cpp	/^vector<int> lookup[100000];$/;"	v
+lookup	p_12946_hanoi/hanoi.cpp	/^int lookup[6][2]={$/;"	v
 ls	17825_yut/yut.new.cpp	/^	ls = 50, le = 52$/;"	e	enum:turnel	file:
 m	15684_ladder/ladder.cpp	/^int n,m,h;$/;"	v
 m	15686_chicken/chicken.old.cpp	/^int n,m;$/;"	v
 m	15686_chicken/test.cpp	/^int n,m,ans=INT_MAX;$/;"	v
+m	16137_seven/seven.cpp	/^int m;$/;"	v
 m	16235_tree/tree.old.cpp	/^int n,m,k;$/;"	v
 m	17472_bridge/bridge.cpp	/^int m,n;$/;"	v
 main	12100_2048/2048.cpp	/^int main(){$/;"	f
@@ -613,6 +636,7 @@ main	15684_ladder/makein.cpp	/^int main(){$/;"	f
 main	15686_chicken/chicken.cpp	/^int main(){$/;"	f
 main	15686_chicken/chicken.old.cpp	/^int main(){$/;"	f
 main	15686_chicken/test.cpp	/^int main(){$/;"	f
+main	16137_seven/seven.cpp	/^int main(){$/;"	f
 main	16234_population/population.cpp	/^int main(void)$/;"	f
 main	16235_tree/javab/Main.java	/^    public static void main(String[] args){$/;"	m	class:Main
 main	16235_tree/test.cpp	/^int main(){$/;"	f
@@ -629,6 +653,7 @@ main	17472_bridge/bridge.cpp	/^int main(){$/;"	f
 main	17472_bridge/test.cpp	/^int main(void){$/;"	f
 main	17779_gerythegathering/gerythegathering.cpp	/^int main(){$/;"	f
 main	17779_gerythegathering/gerythegathering.old.cpp	/^int main(){$/;"	f
+main	17780_yabdrone/yabdrone.cpp	/^int main(){$/;"	f
 main	17825_yut/yut.cpp	/^int main(){$/;"	f
 main	17825_yut/yut.new.cpp	/^int main()$/;"	f
 main	17825_yut/yut.new1.cpp	/^int main(void)$/;"	f
@@ -679,6 +704,7 @@ move	14503_cleanrobot/cleanrobot.cpp	/^bool move(Robot &robot,int r, int c, int 
 move	16236_babyshark/baby.java	/^		int move;$/;"	f	class:baby.Item
 move	17825_yut/yut.new.cpp	/^int move(int start, int cnt)$/;"	f
 move	17837_zabdrone/zabdrone.cpp	/^void move(int idx){$/;"	f
+moveit	17780_yabdrone/yabdrone.cpp	/^bool moveit(int i){$/;"	f
 movewhite	17837_zabdrone/zabdrone.cpp	/^void movewhite(int vidx, int idx, int x, int y, int dx, int dy){$/;"	f
 mpath	replace.py	/^def mpath(lib,c):$/;"	f
 n	13545_seqquery/seqquery.cpp	/^int n;$/;"	v
@@ -687,6 +713,7 @@ n	14888_operator/operator.cpp	/^int n;$/;"	v
 n	15684_ladder/ladder.cpp	/^int n,m,h;$/;"	v
 n	15686_chicken/chicken.old.cpp	/^int n,m;$/;"	v
 n	15686_chicken/test.cpp	/^int n,m,ans=INT_MAX;$/;"	v
+n	16137_seven/seven.cpp	/^int n;$/;"	v
 n	16235_tree/tree.cpp	/^int n;$/;"	v
 n	16235_tree/tree.old.cpp	/^int n,m,k;$/;"	v
 n	16236_babyshark/baby.java	/^		int n;$/;"	f	class:baby.Item
@@ -696,10 +723,12 @@ n	17142_labor/labor.cpp	/^int n;$/;"	v
 n	17281_baseball/baseball.cpp	/^int n;$/;"	v
 n	17472_bridge/bridge.cpp	/^int m,n;$/;"	v
 n	17779_gerythegathering/gerythegathering.old.cpp	/^int n;$/;"	v
+n	17780_yabdrone/yabdrone.cpp	/^int n,k;$/;"	v
 n	17837_zabdrone/zabdrone.cpp	/^int n;$/;"	v
 nA	13458_supervisor/supervisor.cpp	/^int nA;$/;"	v
 ndir	3190_snake/snake.cpp	/^	int ndir;$/;"	m	struct:Part	file:
 ndir	3190_snake/snake.old.cpp	/^	int ndir;$/;"	m	struct:Part	file:
+newy	p_12946_hanoi/hanoi.cpp	/^vector<vector<int>> newy[6];$/;"	v
 next	16236_babyshark/baby.java	/^		static String next() {$/;"	m	class:baby.sc
 next	17837_zabdrone/zabdrone.cpp	/^bool next(){$/;"	f
 nextDouble	16236_babyshark/baby.java	/^		static double nextDouble() {$/;"	m	class:baby.sc
@@ -709,6 +738,7 @@ num	14888_operator/operator.cpp	/^int num[11];$/;"	v
 num	14890_tilt/tilt.cpp	/^int num=0;$/;"	v
 numgame	p_12987_numgame/numgame.java	/^public class numgame {$/;"	c
 ocean	16236_babyshark/babyshark.cpp	/^int ocean[20][20] ={0,};$/;"	v
+oldy	p_12946_hanoi/hanoi.cpp	/^vector<vector<int>> oldy[6];$/;"	v
 oper	14888_operator/operator.cpp	/^int oper[10];$/;"	v
 operator +	13546_seq4/test3.cpp	/^    bool operator+(const Q){$/;"	f	struct:Q
 operator <	13546_seq4/test2.cpp	/^    bool operator<(Q q) const{$/;"	f	struct:Q
@@ -785,6 +815,7 @@ recur	14502_labatory/labatory.cpp	/^int recur(int lev, int ie, int je,int lab[8]
 recur	17070_pipe/pipe.cpp	/^void recur(int xi, int xj, int yi, int yj,int s){$/;"	f
 recur	17825_yut/yut.cpp	/^void recur(int in, int im, int lm, int lv){$/;"	f
 recur	17825_yut/yut.old.cpp	/^int recur(int i,int m,int am){$/;"	f
+recur	p_12946_hanoi/hanoi.cpp	/^vector<vector<int>> recur(int lev){$/;"	f
 recur_c	15686_chicken/chicken.cpp	/^int recur_c(int n,int lev,int idx, int m,vector<int> choice){$/;"	f
 recur_chek	14501_retire/retire.cpp	/^int recur_chek(int n, int *t, int *p,int pivot, int *map){$/;"	f
 recur_chek	14501_retire/retire.other.cpp	/^void recur_chek(int n, int *t, int *p,int i, int *map){$/;"	f
@@ -795,6 +826,7 @@ recursiv	15686_chicken/chicken.old.cpp	/^int recursiv(int cnt,int lv){$/;"	f
 result	14891_gear/gear.cpp	/^int result(){$/;"	f
 ret	13458_supervisor/supervisor.cpp	/^long long ret;$/;"	v
 revert	15683_observation/observation.cpp	/^void revert(int N, int M){$/;"	f
+rights	16137_seven/seven.cpp	/^vector<pair<int,int> > rights;$/;"	v
 roll	3190_snake/snake.cpp	/^void roll(int curs[2],int &ndir, int tdir){$/;"	f
 roll	3190_snake/snake.old.cpp	/^void roll(int curs[2],int &curdir, int tdir){$/;"	f
 rollboard	14499_dice/dice.cpp	/^void rollboard(int dir){$/;"	f
@@ -826,7 +858,9 @@ showme	p_42576_unfinish/unfinish.cpp	/^void showme(unordered_multiset<string> &u
 simul	17281_baseball/baseball.cpp	/^int simul(int ind,int &indj){$/;"	f
 simulate	14891_gear/gear.cpp	/^void simulate(int ind, int wise){$/;"	f
 small	14888_operator/operator.cpp	/^int small(int lv){$/;"	f
+solution	p_12946_hanoi/hanoi.cpp	/^vector<vector<int>> solution(int n) {$/;"	f
 solution	p_12987_numgame/numgame.py	/^def solution(A, B):$/;"	f
+solution	p_17676_chusuk/chusuk.cpp	/^int solution(vector<string> lines) {$/;"	f
 solution	p_42576_unfinish/unfinish.cpp	/^string solution(vector<string> participant, vector<string> completion) {$/;"	f
 solution	p_42577_phonnum/phonnum.cpp	/^bool solution(vector<string> phoneBook) {$/;"	f
 solution	p_42577_phonnum/phonnum.py	/^def solution(phone_book):$/;"	f
@@ -867,6 +901,7 @@ tdir	3190_snake/snake.old.cpp	/^	int tdir;$/;"	m	struct:Part	file:
 temp	16235_tree/javab/Program.java	/^	ArrayList<Integer> temp;$/;"	f	class:Program
 test	p_12987_numgame/test.java	/^public class test {$/;"	c
 time	16236_babyshark/baby.java	/^	static int N, cnt, targetX, targetY, targetSize = 2, time = 0;$/;"	f	class:baby
+track	16137_seven/seven.cpp	/^vector<int> track;$/;"	v
 treeCreate	16235_tree/javab/Program.java	/^	public void treeCreate(int x, int y, int z) {$/;"	m	class:Program
 treelist	16235_tree/javab/Program.java	/^	ArrayList<Tree> treelist;$/;"	f	class:Program
 trees	16235_tree/tree.cpp	/^vector<int> trees[10][10];$/;"	v
@@ -877,6 +912,7 @@ tt	replace.py	/^tt = ["test","makein"]$/;"	v
 ttt	13546_seq4/test2/Makefile	/^ttt = server client$/;"	m
 turnel	17825_yut/yut.new.cpp	/^enum turnel$/;"	g	file:
 upper	AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^int upper[] = {1,0,1,2,3,4,5,6,7,8,9};$/;"	v
+v	16137_seven/seven.cpp	/^int v[10][10]={0,};$/;"	v
 vec	16236_babyshark/babyshark.cpp	/^vector<pair<int,int> > vec;$/;"	v
 vec	AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^vector<int> vec;$/;"	v
 veccnt	16236_babyshark/babyshark.cpp	/^vector<int> veccnt;$/;"	v
