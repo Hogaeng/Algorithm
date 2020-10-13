@@ -15,7 +15,7 @@ int cnt=1;
 bool check(int t){
 	for(int i=0;i<n;i++)
 		for(int j=0;j<n;j++)
-			if(drone_stack[i][j].size()==4){
+			if(drone_stack[i][j].size()>=4){
 				return true;
 			}
 	return false;
