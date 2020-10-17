@@ -448,7 +448,6 @@ debug	17779_gerythegathering/gerythegathering.old.cpp	/^#define debug$/;"	d	file
 debug	17780_yabdrone/yabdrone.cpp	/^#define debug$/;"	d	file:
 debug	17825_yut/yut.old.cpp	/^#define debug$/;"	d	file:
 debug	17837_zabdrone/zabdrone.cpp	/^#define debug$/;"	d	file:
-debug	19236_broshark/broshark.cpp	/^#define debug$/;"	d	file:
 debug	19237_adultshark/adultshark.cpp	/^#define debug$/;"	d	file:
 debug	AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^#define debug$/;"	d	file:
 debug	basic/eoff.cpp	/^#define debug$/;"	d	file:
@@ -461,6 +460,7 @@ demolish	AWXRQm6qfL0DFAUo_breakbrick/breakbrick.cpp	/^void demolish(int **cbrick
 depth	13460_biz/biz.other.cpp	/^	int depth;$/;"	m	struct:balls	file:
 dfs	15686_chicken/test.cpp	/^void dfs(int depth,int x,int y){$/;"	f
 dfs	17825_yut/yut.new.cpp	/^void dfs(int n)$/;"	f
+dfs	19236_broshark/broshark.cpp	/^int dfs(int bv[4][4], int bd[4][4], int vi, int vj){$/;"	f
 dice	14499_dice/dice.cpp	/^int dice[6]={0,};$/;"	v
 dice	17825_yut/yut.new.cpp	/^int ans, dice[10], h[4], score[4];$/;"	v
 diff	13545_seqquery/Makefile	/^define diff$/;"	m
@@ -492,6 +492,7 @@ dir	17142_labor/labor.cpp	/^int dir[4][2]={$/;"	v
 dir	17779_gerythegathering/gerythegathering.old.cpp	/^int dir[2][2]={$/;"	v
 dir	17780_yabdrone/yabdrone.cpp	/^const int dir[4][2]={{0,1},{0,-1},{-1,0},{1,0}};$/;"	v
 dir	17837_zabdrone/zabdrone.cpp	/^int dir[4][2]={$/;"	v
+dir	19236_broshark/broshark.cpp	/^int dir[8][2]={{-1,0},{-1,-1},{0,-1},{1,-1},{1,0},{1,1},{0,1},{-1,1}};$/;"	v
 dir	3190_snake/snake.cpp	/^int dir[4][2]={{0,1},{1,0},{0,-1},{-1,0}};\/\/ndir$/;"	v
 dir	3190_snake/snake.old.cpp	/^int dir[4][2]={{0,1},{1,0},{0,-1},{-1,0}};\/\/ndir$/;"	v
 dir	p_12946_hanoi/hanoi.cpp	/^int dir[6][3] = {$/;"	v
@@ -863,6 +864,7 @@ setX	16235_tree/javab/Tree.java	/^	public void setX(int x) {$/;"	m	class:Tree
 setY	16235_tree/javab/Tree.java	/^	public void setY(int y) {$/;"	m	class:Tree
 setZ	16235_tree/javab/Tree.java	/^	public void setZ(int z) {$/;"	m	class:Tree
 setpos	13460_biz/biz.cpp	/^void setpos(Pos pos[3], Board& board)$/;"	f
+shark	19236_broshark/broshark.cpp	/^const int shark=17;$/;"	v
 showme	p_42576_unfinish/unfinish.cpp	/^void showme(unordered_multiset<string> &us){$/;"	f
 simul	17281_baseball/baseball.cpp	/^int simul(int ind,int &indj){$/;"	f
 simulate	14891_gear/gear.cpp	/^void simulate(int ind, int wise){$/;"	f
