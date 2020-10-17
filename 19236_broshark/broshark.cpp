@@ -1,6 +1,6 @@
 #include<iostream>
 #define debug
-#define FILENAME "00000_format/format_in.txt"
+#define FILENAME "19236_broshark/broshark_in.txt"
 #define FILE_CIN
 using namespace std;
 int main(){

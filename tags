@@ -56,6 +56,8 @@ FILENAME	17780_yabdrone/yabdrone.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	17825_yut/yut.new1.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	17825_yut/yut.old.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	17837_zabdrone/zabdrone.cpp	/^#define FILENAME /;"	d	file:
+FILENAME	19236_broshark/broshark.cpp	/^#define FILENAME /;"	d	file:
+FILENAME	19237_adultshark/adultshark.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	AWXRQm6qfL0DFAUo_breakbrick/breakbrick.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	basic/eoff.cpp	/^#define FILENAME /;"	d	file:
@@ -85,6 +87,8 @@ FILE_CIN	17780_yabdrone/yabdrone.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	17825_yut/yut.new1.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	17825_yut/yut.old.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	17837_zabdrone/zabdrone.cpp	/^#define FILE_CIN$/;"	d	file:
+FILE_CIN	19236_broshark/broshark.cpp	/^#define FILE_CIN$/;"	d	file:
+FILE_CIN	19237_adultshark/adultshark.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	AWXRQm6qfL0DFAUo_breakbrick/breakbrick.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	basic/eoff.cpp	/^#define FILE_CIN$/;"	d	file:
@@ -326,6 +330,7 @@ balls	13460_biz/biz.other.cpp	/^struct balls {$/;"	s	file:
 bar	p_17676_chusuk/chusuk.cpp	/^vector<int> bar;$/;"	v
 bf	AWXRQm6qfL0DFAUo_breakbrick/breakbrick.cpp	/^int bf(int k, int **tbrick){$/;"	f
 bfs	15686_chicken/chicken.old.cpp	/^int bfs(){$/;"	f
+bfs	16137_seven/seven.cpp	/^void bfs(){$/;"	f
 bfs	16236_babyshark/babyshark.cpp	/^int bfs(){$/;"	f
 bfs	17142_labor/labor.cpp	/^int bfs(){$/;"	f
 bfs	17472_bridge/bridge.cpp	/^void bfs(int i,int j,int cl){$/;"	f
@@ -443,6 +448,8 @@ debug	17779_gerythegathering/gerythegathering.old.cpp	/^#define debug$/;"	d	file
 debug	17780_yabdrone/yabdrone.cpp	/^#define debug$/;"	d	file:
 debug	17825_yut/yut.old.cpp	/^#define debug$/;"	d	file:
 debug	17837_zabdrone/zabdrone.cpp	/^#define debug$/;"	d	file:
+debug	19236_broshark/broshark.cpp	/^#define debug$/;"	d	file:
+debug	19237_adultshark/adultshark.cpp	/^#define debug$/;"	d	file:
 debug	AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^#define debug$/;"	d	file:
 debug	basic/eoff.cpp	/^#define debug$/;"	d	file:
 debug	format.cpp	/^#define debug$/;"	d	file:
@@ -453,7 +460,6 @@ debug	p_42626_morehot/morehot.cpp	/^#define debug$/;"	d	file:
 demolish	AWXRQm6qfL0DFAUo_breakbrick/breakbrick.cpp	/^void demolish(int **cbrick, int x, int y){$/;"	f
 depth	13460_biz/biz.other.cpp	/^	int depth;$/;"	m	struct:balls	file:
 dfs	15686_chicken/test.cpp	/^void dfs(int depth,int x,int y){$/;"	f
-dfs	16137_seven/seven.cpp	/^int dfs(int i, int j, int t){$/;"	f
 dfs	17825_yut/yut.new.cpp	/^void dfs(int n)$/;"	f
 dice	14499_dice/dice.cpp	/^int dice[6]={0,};$/;"	v
 dice	17825_yut/yut.new.cpp	/^int ans, dice[10], h[4], score[4];$/;"	v
@@ -479,6 +485,7 @@ dir	14502_labatory/labatory.cpp	/^int dir[4][2]={$/;"	v
 dir	15683_observation/observation.cpp	/^int dir[4][2] = {{0,1},{1,0},{0,-1},{-1,0}};$/;"	v
 dir	15686_chicken/chicken.cpp	/^int dir[4][2]={$/;"	v
 dir	15686_chicken/chicken.old.cpp	/^int dir[4][2] = {{-1,0},{0,1},{1,0},{0,-1}};$/;"	v
+dir	16137_seven/seven.cpp	/^int dir[4][2]={{0,1},{1,0},{0,-1},{-1,0}};$/;"	v
 dir	16235_tree/tree.old.cpp	/^int dir[8][2]={{-1,0},{-1,1},{0,1},{1,1},{1,0},{1,-1},{0,-1},{-1,-1}};$/;"	v
 dir	16236_babyshark/babyshark.cpp	/^int dir[4][2]={{-1,0},{0,-1},{0,1},{1,0}};$/;"	v
 dir	17142_labor/labor.cpp	/^int dir[4][2]={$/;"	v
@@ -662,6 +669,8 @@ main	17837_zabdrone/test.cpp	/^int main(void){$/;"	f
 main	17837_zabdrone/test2.cpp	/^int main(void){$/;"	f
 main	17837_zabdrone/test3.cpp	/^int main(void){$/;"	f
 main	17837_zabdrone/zabdrone.cpp	/^int main(){$/;"	f
+main	19236_broshark/broshark.cpp	/^int main(){$/;"	f
+main	19237_adultshark/adultshark.cpp	/^int main(){$/;"	f
 main	3190_snake/snake.cpp	/^int main(){$/;"	f
 main	3190_snake/snake.old.cpp	/^int main(){$/;"	f
 main	AWXRQm6qfL0DFAUo_breakbrick/breakbrick.cpp	/^int main(){$/;"	f
@@ -920,6 +929,7 @@ vectorfind_replace	basic/split.cpp	/^void vectorfind_replace(int fi, vector<int>
 vir	14502_labatory/labatory.cpp	/^vector<vector<int> > vir;$/;"	v
 vir	17142_labor/labor.cpp	/^vector<int> vir;$/;"	v
 vir_raw	14502_labatory/labatory.cpp	/^vector<vector<int> > vir_raw;$/;"	v
+visited	16137_seven/seven.cpp	/^int visited[10][10]={0,};$/;"	v
 visited	16236_babyshark/baby.java	/^	static boolean[] visited = new boolean[400];$/;"	f	class:baby
 visited	17825_yut/yut.new.cpp	/^bool visited[53];$/;"	v
 wf	17825_yut/yut.cpp	/^ofstream wf;$/;"	v

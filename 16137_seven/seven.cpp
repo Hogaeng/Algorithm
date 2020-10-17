@@ -2,47 +2,51 @@
 #include<vector>
 #include<algorithm>
 #include<climits>
-//#define debug
-//#define FILENAME "16137_seven/seven_in.txt"
-//#define FILE_CIN
+#define debug
+#define FILENAME "16137_seven/seven_in.txt"
+#define FILE_CIN
 using namespace std;
 int n;
 int m;
 int b[10][10]={0,};
 int v[10][10]={0,};
+int visited[10][10]={0,};
 int dir[4][2]={{0,1},{1,0},{0,-1},{-1,0}};
 vector<pair<int,int> > rights;
 vector<pair<int,int> > downs;
 vector<int> track;
 void bfs(){
-    vector<pair<int,int>> que;
+    vector<pair<int,int> > que;
     que.push_back(make_pair(0,0));
     v[0][0]=1;
+	visited[0][0]=1;
     while(que.size()>0){
-        // if(que.size()<100){
-        //     for(int i=0;i<n;i++){
-        //     for(int j=0;j<n;j++)
-        //         cout<<v[i][j]<<' ';
-        //     cout<<endl;
-        //     }
-        //     cout<<endl;
-        // }
-            
-        int x=que[0].first,y=que[0].second,t=v[x][y];;
+		int x=que[0].first,y=que[0].second,t=v[x][y];
+#ifdef debug
+		for(int i=0;i<n;i++){
+			for(int j=0;j<n;j++)
+				cout<<visited[i][j]<<' ';
+			cout<<endl;
+		}
+		cout<<endl;
+#endif
         que.erase(que.begin());
+		if(x==n-1 && y==n-1)
+			continue;
         for(int i=0;i<4;i++){
             int dx=dir[i][0],dy=dir[i][1];
             int nx=x+dx,ny=y+dy;
-            if(v[nx][ny]>0)
-                continue;
             int h;
-            vector<pair<int,int>> tmp;
+            vector<pair<int,int> > tmp;
             if(i==1 || i==3)
                 tmp=downs;
             else
                 tmp=rights;
             
             if(nx>-1&&nx<n&&ny>-1&&ny<n){
+				if(visited[nx][ny]>0)
+					continue;
+				visited[nx][ny]=1;
                 int bp=b[x][y];
                 int bn=b[nx][ny];
                 if(bn==0){
@@ -55,9 +59,7 @@ void bfs(){
                             if(v[nx][ny]>0)
                                 v[nx][ny]=min(v[nx][ny],tmp);
                             else
-                            {
                                 v[nx][ny]=tmp;
-                            }
                             
                             que.push_back(make_pair(nx,ny));
                         }
@@ -144,8 +146,11 @@ int main(){
         bfs();
         #ifdef debug
         for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++)
-                cout<<v[i][j]<<' ';
+            for(int j=0;j<n;j++){
+				if(v[i][j]/10==0)
+					cout<<' ';
+				cout<<v[i][j]<<' ';
+			}
             cout<<endl;
             }
         #endif
@@ -154,8 +159,10 @@ int main(){
     rights.clear();
     downs.clear();
     for(int i=0;i<n;i++)
-        for(int j=0;j<n;j++)
+        for(int j=0;j<n;j++){
             v[i][j]=0;
+            visited[i][j]=0;
+		}
 	}
 #endif
 	return 0;
