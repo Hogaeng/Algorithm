@@ -1,4 +1,5 @@
 #!/bin/bash
+source config
 if [ -z "$target" ]; then
 	echo "NO target"
 	exit 1
