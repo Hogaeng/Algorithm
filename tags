@@ -931,7 +931,6 @@ vectorfind_replace	basic/split.cpp	/^void vectorfind_replace(int fi, vector<int>
 vir	14502_labatory/labatory.cpp	/^vector<vector<int> > vir;$/;"	v
 vir	17142_labor/labor.cpp	/^vector<int> vir;$/;"	v
 vir_raw	14502_labatory/labatory.cpp	/^vector<vector<int> > vir_raw;$/;"	v
-visited	16137_seven/seven.cpp	/^int visited[10][10]={0,};$/;"	v
 visited	16236_babyshark/baby.java	/^	static boolean[] visited = new boolean[400];$/;"	f	class:baby
 visited	17825_yut/yut.new.cpp	/^bool visited[53];$/;"	v
 wf	17825_yut/yut.cpp	/^ofstream wf;$/;"	v
