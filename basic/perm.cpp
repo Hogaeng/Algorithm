@@ -98,6 +98,7 @@ int main(void){
     for(int i=1;i<=5;i++){
 	vec.push_back(i);
     }
+	
     perm(0,5,3,vec,check);
     cout<<cnt<<endl;
     cnt=0;
