@@ -9,6 +9,18 @@ if [ -z "$targetn" ]; then
 	exit 1
 fi
 
+if [ "$targete" == "cpp" ]; then
+	targetexe_e=".out"
+elif [ "$targete" == "java" ]; then
+	targetexe_e=""
+	target="Main"
+elif [ "$targete" == "py" ]; then
+	targetexe_e=".py"
+else
+	echo "NO targete"
+	exit 1
+fi
+
 targetfol=$targetn"_"$target
 targetout=$targetfol/$target"_out"
 targetin=$targetfol/$target"_in"
@@ -26,17 +38,6 @@ makefile(){
 		echo "}">>$2
 	fi
 }
-
-if [ "$targete" == "cpp" ]; then
-	targetexe_e=".out"
-elif [ "$targete" == "java" ]; then
-	targetexe_e=""
-elif [ "$targete" == "py" ]; then
-	targetexe_e=".py"
-else
-	echo "NO targete"
-	exit 1
-fi
 
 if ! [ -d $targetfol ]; then
 	mkdir $targetfol

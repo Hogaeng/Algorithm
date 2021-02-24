@@ -1,7 +1,9 @@
 ./config
 
 $targetfol=$targetn+"_"+$target
-
+if($targete -eq "java"){
+    $target="Main"
+}
 $targetout=$targetfol+"/"+$target+"_out"
 $targetin=$targetfol+"/"+$target+"_in"
 $targetfff=$targetfol+"/"+$target+"."+$targete
@@ -9,7 +11,15 @@ $targetold=$targetfol+"/"+$target+".old."+$targete
 $makeinfff=$targetfol+"/"+"makein."+$targete
 $testfff=$targetfol+"/"+"test."+$targete
 
-$targetexe_e=".exe"
+if($targete -eq "cpp"){
+    $targetexe_e=".exe"
+}
+elseif($targete -eq "java"){
+    $targetexe_e=".java"
+}
+elseif($targete -eq "python"){
+    $targetexe_e=".py"
+}
 $targetexe=$targetfol+"/"+$target+$targetexe_e
 $makeinexe=$targetfol+"/"+"makein"+$targetexe_e
 $testexe=$targetfol+"/"+"test"+$targetexe_e
@@ -20,5 +30,19 @@ if($targete -eq "cpp"){
     }
     if($args[0] -eq "e"){
         . $targetexe
+    }
+}
+elseif($targete -eq "java"){
+    if($args[0] -eq "c"){
+        javac $targetfff
+    }
+    if($args[0] -eq "e"){
+        java $targetexe
+    }
+}
+elseif($targete -eq "python"){
+
+    if($args[0] -eq "e"){
+        python $targetexe
     }
 }
