@@ -1,12 +1,11 @@
-//한글 커맨트 삭제 필요
-//자바 파일이름은 반드시 Main.java
-//제출시 패키지 커멘트 아웃
-package format;
+package arraylist;
 import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
 import java.io.FileInputStream;
 public class Main{
-    private static final boolean file_cin=true;
-    private static final String filename="0000_format/format_in.txt";
+    private static final boolean file_cin=false;
+    private static final String filename="basic/arraylist/arraylist.txt";
     public static void main(String[] args){
         if(file_cin){
             FileInputStream instream=null;
@@ -23,7 +22,11 @@ public class Main{
         if(file_cin)
             tmp=in.nextInt();
 	    for(int z=0;z<tmp;z++){
-            //Write your code here
+            int t[]={3,1,2};
+            int n=5;
+            List<Integer> tt= new ArrayList<Integer>();
+            for(int i=0;i<tt.size();i++)
+                System.out.print(tt.get(i)+" ");
         }
     }
 }

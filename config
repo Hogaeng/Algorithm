@@ -1,3 +1,3 @@
-export target="seven"
-export targetn=16137
-export targete="cpp"
+export target="basic"
+export targetn=""
+export targete="java"
