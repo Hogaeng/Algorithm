@@ -24,7 +24,7 @@ public class Main{
 	    for(int z=0;z<tmp;z++){
             int t[]={3,1,2};
             int n=5;
-            List<Integer> tt= new ArrayList<Integer>();
+            List<Integer> tt= new ArrayList<Integer>(List.of(3,1,2));
             for(int i=0;i<tt.size();i++)
                 System.out.print(tt.get(i)+" ");
         }
