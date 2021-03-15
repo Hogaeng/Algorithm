@@ -1,11 +1,9 @@
-package _basic.arraylist;
+package format;
 import java.util.Scanner;
-import java.util.List;
-import java.util.ArrayList;
 import java.io.FileInputStream;
 public class Main{
     private static final boolean file_cin=false;
-    private static final String filename="basic/arraylist/arraylist.txt";
+    private static final String filename="0000_format/format_in.txt";
     public static void main(String[] args){
         if(file_cin){
             FileInputStream instream=null;
@@ -22,10 +20,8 @@ public class Main{
         if(file_cin)
             tmp=in.nextInt();
 	    for(int z=0;z<tmp;z++){
-            int t[]={3,1,2};
-            int n=5;
-            for(int i=0;i<t.length;i++)
-                System.out.print(t[i]+" ");
+            //Write your code here
+            System.out.println("hello");
         }
     }
 }

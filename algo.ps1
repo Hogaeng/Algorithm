@@ -2,7 +2,7 @@
 
 $targetfol=$targetn+"_"+$target
 if($targete -eq "java"){
-    $target="Main"
+    $target="*"
 }
 $targetout=$targetfol+"/"+$target+"_out"
 $targetin=$targetfol+"/"+$target+"_in"
@@ -15,7 +15,8 @@ if($targete -eq "cpp"){
     $targetexe_e=".exe"
 }
 elseif($targete -eq "java"){
-    $targetexe_e=".java"
+    $target="Main"
+    $targetexe_e=""
 }
 elseif($targete -eq "python"){
     $targetexe_e=".py"
