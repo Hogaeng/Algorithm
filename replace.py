@@ -50,6 +50,7 @@ for a in listdir("."):
         if lia[0].isdigit():
             b="b_"+lia[0]+"_"+lia[1]
             print(a+'   '+b)
+            rename(a,b)
         '''
         for b in listdir("./"+a):
             lib=b.split(".")
