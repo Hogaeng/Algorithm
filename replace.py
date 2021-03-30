@@ -47,7 +47,10 @@ for a in listdir("."):
         if conflag==True:
             continue
         lia=a.split("_")
-        #print(li)
+        if lia[0].isdigit():
+            b="b_"+lia[0]+"_"+lia[1]
+            print(a+'   '+b)
+        '''
         for b in listdir("./"+a):
             lib=b.split(".")
             if lib[-1] == "cpp":
@@ -64,3 +67,4 @@ for a in listdir("."):
                         lib[0] = lik
                     #print(lib)
                     makepath(lia,lib)
+        '''
