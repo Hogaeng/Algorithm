@@ -1,6 +1,3 @@
-//한글 커맨트 삭제 필요
-//자바 파일이름은 반드시 Main.java
-//제출시 패키지 커멘트 아웃
 package format;
 import java.util.Scanner;
 import java.io.FileInputStream;
@@ -27,3 +24,6 @@ public class Main{
         }
     }
 }
+//한글 커맨트 삭제 필요
+//자바 파일이름은 반드시 Main.java
+//제출시 패키지 커멘트 아웃

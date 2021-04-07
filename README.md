@@ -19,17 +19,20 @@ config.ps1 파일 사용.
 해시로 시작하는 폴더는 SW Expert academy 알고리즘입니다.
 p로 시작하는 폴더는 프로그래머스 알고리즘 입니다.
 
->16236_babyshark 에서 16236은 <https://www.acmicpc.net/problem/16236> 을 의미한다. 접속하면 아기상어 문제라는 것을 알 수 있다.
+>b_6236_babyshark 에서 16236은 <https://www.acmicpc.net/problem/16236> 을 의미한다. 접속하면 아기상어 문제라는 것을 알 수 있다.
 
->AWXRQm6qfL0DFAUo_breakbrick 에서 AWXRQm6qfL0DFAUo는<https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRQm6qfL0DFAUo> 를 의미한다. 접속하면 벽돌깨기 문제라는 것을 알 수 있다.
+>sw_AWXRQm6qfL0DFAUo_breakbrick 에서 AWXRQm6qfL0DFAUo는<https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRQm6qfL0DFAUo> 를 의미한다. 접속하면 벽돌깨기 문제라는 것을 알 수 있다.
 
 >p_12987_numgame 에서 12987은 <https://programmers.co.kr/learn/courses/30/lessons/12987> 을 의미한다. 접속하면 숫자게임 문제라는 것을 알 수 있다.
 
 ## Windows 시스템 설정
-1. git clone.
-2. Visual Code에서 클론한 폴더 열기.
-3. config.ps1을 설정.
-4. config.ps1의 설정값을 이용해 아래와 같은 명령어 사용 가능.
+1. PowerShell 관리자 권한으로 열기
+2. Set-ExecutionPolicy unrestricted
+3. vim $profile.CurrentUserAllHosts
+	> function m{ ./algo $args }
+3. if (!(Test-Path -Path $PROFILE.CurrentUserAllHosts))
+{ New-Item -Type File -Path $PROFILE.CurrentUserAllHosts -Force; echo "function m{ ./algo $args }" > $PROFILE.CurrentUserAllHosts }
+4. PowerShell 재실행
 ```
 m c : config.ps1에서 지정한 소스코드 컴파일(py파일은 동작하지 않음)
 m e : config.ps1에서 지정한 소스코스 실행

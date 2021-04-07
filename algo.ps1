@@ -29,7 +29,7 @@ if($targete -eq "cpp"){
     if($args[0] -eq "c"){
         g++ $targetfff -o $targetexe -g
     }
-    if($args[0] -eq "e"){
+    elseif($args[0] -eq "e"){
         . $targetexe
     }
 }
@@ -37,8 +37,16 @@ elseif($targete -eq "java"){
     if($args[0] -eq "c"){
         javac $targetfff
     }
-    if($args[0] -eq "e"){
+    elseif($args[0] -eq "e"){
         java $targetexe
+    }
+    elseif($args[0] -eq "i"){
+        if(Test-Path -Path $targetfff -PathType Leaf){
+            echo yes
+        }
+        else{
+            echo no
+        }
     }
 }
 elseif($targete -eq "python"){
