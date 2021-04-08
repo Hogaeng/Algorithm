@@ -1,10 +1,10 @@
 //Comment out package name when submit the code.
-package targetfol;
+package b_20056_mageshark;
 import java.util.Scanner;
 import java.io.FileInputStream;
 public class Main{
     private static final boolean file_cin=true;
-    private static final String filename="targetin.txt";
+    private static final String filename="b_20056_mageshark/mageshark_in.txt";
     public static void main(String[] args){
         if(file_cin){
             FileInputStream instream=null;

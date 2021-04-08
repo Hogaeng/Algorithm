@@ -1,10 +1,10 @@
 //Comment out package name when submit the code.
-package targetfol;
+package b_19237_adultshark;
 import java.util.Scanner;
 import java.io.FileInputStream;
 public class Main{
     private static final boolean file_cin=true;
-    private static final String filename="targetin.txt";
+    private static final String filename="b_19237_adultshark/adultshark_in.txt";
     public static void main(String[] args){
         if(file_cin){
             FileInputStream instream=null;

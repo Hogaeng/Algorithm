@@ -1,12 +1,13 @@
 ./config
 
 $targetfol=$targetn+"_"+$target
-if($targete -eq "java"){
-    $target="*"
-}
 $targetout=$targetfol+"/"+$target+"_out"
 $targetin=$targetfol+"/"+$target+"_in"
 $targetfff=$targetfol+"/"+$target+"."+$targete
+if($targete -eq "java"){
+    $targetfff=$targetfol+"/"+"Main."+$targete
+}
+$targetall=$targetfol+"/"+"*."+$targete
 $targetold=$targetfol+"/"+$target+".old."+$targete
 $makeinfff=$targetfol+"/"+"makein."+$targete
 $testfff=$targetfol+"/"+"test."+$targete
@@ -25,6 +26,19 @@ $targetexe=$targetfol+"/"+$target+$targetexe_e
 $makeinexe=$targetfol+"/"+"makein"+$targetexe_e
 $testexe=$targetfol+"/"+"test"+$targetexe_e
 
+if($args[0] -eq "i"){
+    if (-not(Test-Path -Path $targetfol)){
+        mkdir $targetfol
+    }
+    if (-not(Test-Path -Path $targetfff -PathType Leaf)){
+        cp format'.'$targete $targetfff
+        ((Get-Content -path format'.'$targete) -replace 'targetfol',$targetfol -replace 'targetin', $targetin)  | Set-Content -Path $targetfff
+    }
+    if (-not(Test-Path -Path $targetin'.txt' -PathType Leaf)){
+        echo $null >> $targetin'.txt'
+    }
+}
+
 if($targete -eq "cpp"){
     if($args[0] -eq "c"){
         g++ $targetfff -o $targetexe -g
@@ -41,16 +55,9 @@ elseif($targete -eq "java"){
         java $targetexe
     }
     elseif($args[0] -eq "i"){
-        if(Test-Path -Path $targetfff -PathType Leaf){
-            echo yes
-        }
-        else{
-            echo no
-        }
     }
 }
 elseif($targete -eq "python"){
-
     if($args[0] -eq "e"){
         python $targetexe
     }

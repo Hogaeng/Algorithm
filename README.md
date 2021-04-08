@@ -28,10 +28,8 @@ p로 시작하는 폴더는 프로그래머스 알고리즘 입니다.
 ## Windows 시스템 설정
 1. PowerShell 관리자 권한으로 열기
 2. Set-ExecutionPolicy unrestricted
-3. vim $profile.CurrentUserAllHosts
-	> function m{ ./algo $args }
 3. if (!(Test-Path -Path $PROFILE.CurrentUserAllHosts))
-{ New-Item -Type File -Path $PROFILE.CurrentUserAllHosts -Force; echo "function m{ ./algo $args }" > $PROFILE.CurrentUserAllHosts }
+{ New-Item -Type File -Path $PROFILE.CurrentUserAllHosts -Force; echo 'function m{ ./algo $args }' > $PROFILE.CurrentUserAllHosts } else { echo 'function m{ ./algo $args }' >> $PROFILE.CurrentUserAllHosts }
 4. PowerShell 재실행
 ```
 m c : config.ps1에서 지정한 소스코드 컴파일(py파일은 동작하지 않음)
@@ -79,6 +77,7 @@ ${target}_out.txt는 babyshark_out.txt
 
 설정이 끝나면 아래와 같은 명령어를 사용 할 수 있다.
 ```
+m i : 초기화. config에 따라 폴더와 파일(메인파일, 입력파일)을 만든다.
 m l : target 알고리즘 폴더에 들어있는 파일 목록을 볼 수 있다.(v2 전용)
 
 m v : ${target}.cpp를 vi 편집기로 실행한다.
