@@ -1,2 +1,4 @@
+sed -i 's///g' algo_v2.sh
+sed -i 's///g' config
 cp algo_v2.sh ~/algo.sh
 source ~/.bash_profile
