@@ -13,7 +13,6 @@ if [ "$targete" == "cpp" ]; then
 	targetexe_e=".out"
 elif [ "$targete" == "java" ]; then
 	targetexe_e=""
-	target="Main"
 elif [ "$targete" == "py" ]; then
 	targetexe_e=".py"
 else
@@ -24,38 +23,30 @@ fi
 targetfol=$targetn"_"$target
 targetout=$targetfol/$target"_out"
 targetin=$targetfol/$target"_in"
+replace_targetin=$targetfol\\/$target"_in"
 targetfff=$targetfol/$target"."$targete
+if [ "$targete" == "java" ]; then
+	targetfff=$targetfol/$"Main."$targete
+fi
 targetold=$targetfol/$target".old."$targete
+if [ "$targete" == "java" ]; then
+	targetold=$targetfol/$"Main.old."$targete
+fi
 makeinfff=$targetfol/"makein."$targete
 testfff=$targetfol/"test."$targete
 
 makefile(){
-	if ! [ -f $2 ]; then
-		echo "package "$targetfol\;>>$2
-		echo "public class "$1" {">>$2
-		echo "    public static void main(String args[]) {">>$2
-		echo "    }">>$2
-		echo "}">>$2
-	fi
-}
-
 if ! [ -d $targetfol ]; then
 	mkdir $targetfol
 fi
 if ! [ -f $targetfff ]; then
-	if [ "$targete" == "java" ]; then
-		touch $targetfff
-		makefile $target $targetfff
-	else
-		cp format.$targete $targetfff
-		if [ "$targete" == "cpp" ]; then
-			sed -i '' '3s/format/'$target'/' $targetfff
-			sed -i '' '3s/format/'$target'/' $targetfff
-			sed -i '' '3s/00000/'$targetn'/' $targetfff
-		fi
-	fi
+	cp format.$targete $targetfff
+	sed -i "s/targetin/$replace_targetin/g" $targetfff
+	sed -i "s/targetfol/$targetfol/g" $targetfff
 fi
+}
 
+makefile
 targetexe=$targetfol/$target$targetexe_e
 makeinexe=$targetfol/"makein"$targetexe_e
 testexe=$targetfol/"test"$targetexe_e
@@ -109,20 +100,23 @@ if [[ $# > 0 ]]; then
 		fi
 	elif [ $1 == "v" ]; then
 		vi $targetfff
+	elif [ $1 == "i" ]; then
+		makefile
 	elif [ $1 == "l" ]; then
 		ls $targetfol
 	elif [ $1 == "vm" ]; then
-		if [ "$targete" == "java" ]; then
-			makefile "makein" $makeinfff
-		fi
 		vi $makeinfff
 	elif [ $1 == "vt" ]; then
-		if [ "$targete" == "java" ]; then
-			makefile "test" $testfff
-		fi
 		vi $testfff
 	elif [ $1 == "c" ]; then
-		cat $targetfff | pbcopy
+		if [ "$targete" == "cpp" ]; then
+			ctags -R
+			clang++ $targetfff -o $targetexe -g
+		elif [ "$targete" == "java" ]; then
+			javac $targetfff
+		elif [ "$targete" == "py" ]; then
+			python3 $targetexe
+		fi
 	elif [ $1 == "cm" ]; then
 		if [ "$targete" == "cpp" ]; then
 			clang++ $makeinfff -o $makinexe -g
