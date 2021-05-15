@@ -35,7 +35,7 @@ if($args[0] -eq "i"){
         ((Get-Content -path format'.'$targete) -replace 'targetfol',$targetfol -replace 'targetin', $targetin)  | Set-Content -Path $targetfff
     }
     if (-not(Test-Path -Path $targetin'.txt' -PathType Leaf)){
-        echo $null >> $targetin'.txt'
+        New-Item $targetin'.txt' -type file
     }
 }
 
