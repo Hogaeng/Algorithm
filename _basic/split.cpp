@@ -4,18 +4,6 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-void split_substr(string s,string deli,vector<string> &sv){
-    size_t cursor;
-    cursor = s.find(deli);
-    //string::npos는 string의 가장 큰 인덱스 값을 의미.
-    //string::npos의 타입 string::size_type는 (size_t라고도 함) unsigned integer이므로 -1이 가장 큰값이다.
-    if(cursor == string::npos)
-	    sv.push_back("nothing");
-    else
-	    sv.push_back(s.substr(cursor,deli.size()));
-    //sv.push_back(as.substr(previous, current - previous));
-    //출처: https://makedotworld.tistory.com/28 [옥토의 학습저널]
-}
 void split_sstream(string s,vector<string> &sv){
     istringstream ss(s);
     string t;
@@ -31,6 +19,21 @@ void split_find_distance(int fi, vector<int> &iv){
         iv[ind]=fi+10;
     }
 }
+vector<string> split_substr (string s, string delimiter) {
+    size_t pos_start = 0, pos_end, delim_len = delimiter.length();
+    string token;
+    vector<string> res;
+    //string::npos는 string의 가장 큰 인덱스 값을 의미.
+    //string::npos의 타입 string::size_type는 (size_t라고도 함) unsigned integer이므로 -1이 가장 큰값이다.
+    while ((pos_end = s.find (delimiter, pos_start)) != string::npos) {
+        token = s.substr (pos_start, pos_end - pos_start);
+        pos_start = pos_end + delim_len;
+        res.push_back (token);
+    }
+    res.push_back (s.substr (pos_start));
+    return res;
+}
+
 int main(){
     //스플릿 할 스트링
     string s="hello_im_human";
@@ -48,7 +51,7 @@ int main(){
 	    cout<<sv[i]<<' ';
     cout<<'\n';
     
-    split_substr(s2,"im",sv2);
+    sv2=split_substr(s2,"im");
     for(int i=0;i<sv2.size();i++)
 	    cout<<sv2[i]<<' ';
     cout<<'\n';
