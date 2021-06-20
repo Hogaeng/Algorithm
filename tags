@@ -39,6 +39,7 @@ E	b_14499_dice/dice.cpp	/^enum {EE,E,W,N,S};$/;"	e	enum:__anon5	file:
 EE	b_14499_dice/dice.cpp	/^enum {EE,E,W,N,S};$/;"	e	enum:__anon5	file:
 F	b_14499_dice/dice.cpp	/^enum {U,B,R,L,F,D};$/;"	e	enum:__anon4	file:
 FILENAME	_basic/eoff.cpp	/^#define FILENAME /;"	d	file:
+FILENAME	a_PICNIC/PICNIC.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	b_13545_seqquery/seqquery.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	b_13545_seqquery/seqquery.old.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	b_13546_seq4/seq4.cpp	/^#define FILENAME /;"	d	file:
@@ -71,6 +72,7 @@ FILENAME	p_42626_morehot/morehot.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	sw_AWXRQm6qfL0DFAUo_breakbrick/breakbrick.cpp	/^#define FILENAME /;"	d	file:
 FILENAME	sw_AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^#define FILENAME /;"	d	file:
 FILE_CIN	_basic/eoff.cpp	/^#define FILE_CIN$/;"	d	file:
+FILE_CIN	a_PICNIC/PICNIC.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	b_13545_seqquery/seqquery.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	b_13545_seqquery/seqquery.old.cpp	/^#define FILE_CIN$/;"	d	file:
 FILE_CIN	b_13546_seq4/seq4.cpp	/^#define FILE_CIN$/;"	d	file:
@@ -140,6 +142,8 @@ M_MAX	b_16235_tree/tree.old.cpp	/^#define M_MAX /;"	d	file:
 Main	_basic/Main.java	/^public class Main{$/;"	c
 Main	_basic/arraylist/Main.java	/^public class Main{$/;"	c
 Main	b_16235_tree/javab/Main.java	/^public class Main{$/;"	c
+Main	b_19237_adultshark/Main.java	/^public class Main{$/;"	c
+Main	b_20056_mageshark/Main.java	/^public class Main{$/;"	c
 Main	b_2920_melody/Main.java	/^public class Main{$/;"	c
 Main	format.java	/^public class Main{$/;"	c
 MakeState	b_17825_yut/yut.new1.cpp	/^void MakeState(STATE S, int Idx, bool T)$/;"	f
@@ -344,6 +348,8 @@ answer	forager_firegalaxy/firegalaxyold.cpp	/^bool answer=false;$/;"	v
 answernowdir	b_15683_observation/observation.cpp	/^int answernowdir[8]={0,0,0,0,0,0,0,0};$/;"	v
 b	b_16137_seven/seven.cpp	/^int b[10][10]={0,};$/;"	v
 b	replace.py	/^            b="b_"+lia[0]+"_"+lia[1]$/;"	v
+b_19237_adultshark	b_19237_adultshark/Main.java	/^package b_19237_adultshark;$/;"	p
+b_20056_mageshark	b_20056_mageshark/Main.java	/^package b_20056_mageshark;$/;"	p
 b_md	sw_AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^int b_md(int n){$/;"	f
 baby	b_16236_babyshark/baby.java	/^public class baby {$/;"	c
 balls	b_13460_biz/biz.other.cpp	/^	balls(int d, int rx, int ry, int bx,int by):depth(d),rx(rx),ry(ry),bx(bx),by(by){}$/;"	f	struct:balls
@@ -461,6 +467,7 @@ d	b_14503_cleanrobot/cleanrobot.cpp	/^	int d;$/;"	m	struct:Robot	file:
 d	b_14503_cleanrobot/cleanrobot.cpp	/^int d[4][2] = {{0,-1},{1,0},{0,1},{-1,0}};$/;"	v
 deadtrees	b_16235_tree/tree.old.cpp	/^vector<int> deadtrees[R][C];$/;"	v
 debug	_basic/eoff.cpp	/^#define debug$/;"	d	file:
+debug	a_PICNIC/PICNIC.cpp	/^#define debug$/;"	d	file:
 debug	b_13545_seqquery/seqquery.cpp	/^#define debug$/;"	d	file:
 debug	b_13545_seqquery/seqquery.old.cpp	/^#define debug$/;"	d	file:
 debug	b_13546_seq4/seq4.cpp	/^#define debug$/;"	d	file:
@@ -527,6 +534,7 @@ dir	b_19236_broshark/broshark.cpp	/^int dir[8][2]={{-1,0},{-1,-1},{0,-1},{1,-1},
 dir	b_19237_adultshark/adultshark.cpp	/^int dir[5][2]={{0,0},{-1,0},{1,0},{0,-1},{0,1}};$/;"	v
 dir	b_3190_snake/snake.cpp	/^int dir[4][2]={{0,1},{1,0},{0,-1},{-1,0}};\/\/ndir$/;"	v
 dir	b_3190_snake/snake.old.cpp	/^int dir[4][2]={{0,1},{1,0},{0,-1},{-1,0}};\/\/ndir$/;"	v
+dir	forager_firegalaxy/firegalaxy.cpp	/^int dir[4][2]={{0,1},{1,0},{0,-1},{-1,0}};$/;"	v
 dir	forager_firegalaxy/firegalaxynew.cpp	/^int dir[5][2]={{0,0},{-1,0},{0,1},{1,0},{0,-1}};$/;"	v
 dir	forager_firegalaxy/firegalaxyold.cpp	/^int dir[5][2]={{0,0},{-1,0},{0,1},{1,0},{0,-1}};$/;"	v
 dir	p_12946_hanoi/hanoi.cpp	/^int dir[6][3] = {$/;"	v
@@ -553,6 +561,7 @@ eat	b_16236_babyshark/babyshark.cpp	/^void eat(int x, int y){$/;"	f
 eatA	b_3190_snake/snake.cpp	/^void eatA(vector<Part> &snake,Part &tpart){$/;"	f
 eatA	b_3190_snake/snake.old.cpp	/^void eatA(vector<Part> &snake){$/;"	f
 eboard	b_15686_chicken/chicken.old.cpp	/^bool eboard[50][50]={0,};$/;"	v
+elapsedseconds	a_PICNIC/PICNIC.cpp	/^#define elapsedseconds(/;"	d	file:
 elapsedseconds	forager_firegalaxy/firegalaxy.cpp	/^#define elapsedseconds(/;"	d	file:
 elapsedseconds	format.cpp	/^#define elapsedseconds(/;"	d	file:
 ended	p_17676_chusuk/chusuk.cpp	/^vector<int> ended;$/;"	v
@@ -566,14 +575,18 @@ file_cin	_basic/Main.java	/^    private static final boolean file_cin=false;$/;"
 file_cin	_basic/arraylist/Main.java	/^    private static final boolean file_cin=false;$/;"	f	class:Main	file:
 file_cin	b_14888_operator/operator.cpp	/^#define file_cin$/;"	d	file:
 file_cin	b_16235_tree/tree.old.cpp	/^#define file_cin$/;"	d	file:
+file_cin	b_19237_adultshark/Main.java	/^    private static final boolean file_cin=true;$/;"	f	class:Main	file:
+file_cin	b_20056_mageshark/Main.java	/^    private static final boolean file_cin=true;$/;"	f	class:Main	file:
 file_cin	b_2920_melody/Main.java	/^    private static final boolean file_cin=true;$/;"	f	class:Main	file:
 file_cin	b_2920_melody/melody.py	/^file_cin=True$/;"	v
 file_cin	format.java	/^    private static final boolean file_cin=true;$/;"	f	class:Main	file:
 file_cin	format.py	/^file_cin=False$/;"	v
 filename	_basic/Main.java	/^    private static final String filename="0000_format\/format_in.txt";$/;"	f	class:Main	file:
 filename	_basic/arraylist/Main.java	/^    private static final String filename="basic\/arraylist\/arraylist.txt";$/;"	f	class:Main	file:
+filename	b_19237_adultshark/Main.java	/^    private static final String filename="b_19237_adultshark\/adultshark_in.txt";$/;"	f	class:Main	file:
+filename	b_20056_mageshark/Main.java	/^    private static final String filename="b_20056_mageshark\/mageshark_in.txt";$/;"	f	class:Main	file:
 filename	b_2920_melody/Main.java	/^    private static final String filename="2920_melody\/melody_in.txt";$/;"	f	class:Main	file:
-filename	format.java	/^    private static final String filename="0000_format\/format_in.txt";$/;"	f	class:Main	file:
+filename	format.java	/^    private static final String filename="targetin.txt";$/;"	f	class:Main	file:
 files	b_13546_seq4/test2/Makefile	/^files := $(foreach dir,$(dirs),$(find_files))$/;"	m
 find_files	b_13546_seq4/test2/Makefile	/^find_files = $(wildcard $(dir)\/*)$/;"	m
 findit	b_13545_seqquery/seqquery.cpp	/^void findit(){$/;"	f
@@ -585,7 +598,6 @@ firstw	b_17281_baseball/Makefile	/^firstw = $(firstword $(MAKECMDGOALS))$/;"	m
 fishes	b_16236_babyshark/baby.java	/^	static ArrayList<Item> fishes = new ArrayList<Item>();$/;"	f	class:baby
 format	_basic/Main.java	/^package format;$/;"	p
 format	b_16234_population/population.cpp	/^const int format[4][2]={$/;"	v
-format	format.java	/^package format;$/;"	p
 gain_score	b_17825_yut/yut.new.cpp	/^int gain_score(int p)$/;"	f
 getX	b_16235_tree/javab/Tree.java	/^	public int getX() {$/;"	m	class:Tree
 getY	b_16235_tree/javab/Tree.java	/^	public int getY() {$/;"	m	class:Tree
@@ -668,6 +680,8 @@ main	_basic/eoff.cpp	/^int main(){$/;"	f
 main	_basic/pairtest.cpp	/^int main(){$/;"	f
 main	_basic/perm.cpp	/^int main(void){$/;"	f
 main	_basic/split.cpp	/^int main(){$/;"	f
+main	_basic/test.cpp	/^int main(){$/;"	f
+main	a_PICNIC/PICNIC.cpp	/^int main(){$/;"	f
 main	b_12100_2048/2048.cpp	/^int main(){$/;"	f
 main	b_12100_easy/easy.other.cpp	/^int main()$/;"	f
 main	b_13458_supervisor/makeinput.cpp	/^int main(){$/;"	f
@@ -729,7 +743,9 @@ main	b_17837_zabdrone/test2.cpp	/^int main(void){$/;"	f
 main	b_17837_zabdrone/test3.cpp	/^int main(void){$/;"	f
 main	b_17837_zabdrone/zabdrone.cpp	/^int main(){$/;"	f
 main	b_19236_broshark/broshark.cpp	/^int main(){$/;"	f
+main	b_19237_adultshark/Main.java	/^    public static void main(String[] args){$/;"	m	class:Main
 main	b_19237_adultshark/adultshark.cpp	/^int main(){$/;"	f
+main	b_20056_mageshark/Main.java	/^    public static void main(String[] args){$/;"	m	class:Main
 main	b_2920_melody/Main.java	/^    public static void main(String[] args){$/;"	m	class:Main
 main	b_2920_melody/melody.cpp	/^int main(){$/;"	f
 main	b_3190_snake/snake.cpp	/^int main(){$/;"	f
@@ -797,6 +813,7 @@ n	b_17472_bridge/bridge.cpp	/^int m,n;$/;"	v
 n	b_17779_gerythegathering/gerythegathering.old.cpp	/^int n;$/;"	v
 n	b_17780_yabdrone/yabdrone.cpp	/^int n,k;$/;"	v
 n	b_17837_zabdrone/zabdrone.cpp	/^int n;$/;"	v
+n	forager_firegalaxy/firegalaxy.cpp	/^int n=6;$/;"	v
 nA	b_13458_supervisor/supervisor.cpp	/^int nA;$/;"	v
 ndir	b_3190_snake/snake.cpp	/^	int ndir;$/;"	m	struct:Part	file:
 ndir	b_3190_snake/snake.old.cpp	/^	int ndir;$/;"	m	struct:Part	file:
@@ -889,6 +906,7 @@ readLine	b_16236_babyshark/baby.java	/^		static String readLine() {$/;"	m	class:
 readLineReplace	b_16236_babyshark/baby.java	/^		static String readLineReplace() {$/;"	m	class:baby.sc
 recComb	b_14889_startlink/startlink.cpp	/^int recComb(int n,int cnt,int pivot, int board[20][20],bool check[20]){$/;"	f
 recVec	b_14889_startlink/startlink.cpp	/^int recVec(vector<int> &vec, int pivot, int cnt, bool check[10], int hn,int board[20][20]){$/;"	f
+recur	a_PICNIC/PICNIC.cpp	/^int recur(int lev, int pivot, int n, bool *check,vector<pair<int, int> > f){$/;"	f
 recur	b_12100_2048/2048.cpp	/^void recur(int lv, int n){$/;"	f
 recur	b_14502_labatory/labatory.cpp	/^int recur(int lev, int ie, int je,int lab[8][8]){$/;"	f
 recur	b_17070_pipe/pipe.cpp	/^void recur(int xi, int xj, int yi, int yj,int s){$/;"	f
@@ -938,6 +956,7 @@ setpos	b_13460_biz/biz.cpp	/^void setpos(Pos pos[3], Board& board)$/;"	f
 shark	b_19236_broshark/broshark.cpp	/^const int shark=17;$/;"	v
 showme	p_42576_unfinish/unfinish.cpp	/^void showme(unordered_multiset<string> &us){$/;"	f
 simul	b_17281_baseball/baseball.cpp	/^int simul(int ind,int &indj){$/;"	f
+simul	forager_firegalaxy/firegalaxy.cpp	/^void simul(int rn,bool boardb[6][6]){$/;"	f
 simulate	b_14891_gear/gear.cpp	/^void simulate(int ind, int wise){$/;"	f
 small	b_14888_operator/operator.cpp	/^int small(int lv){$/;"	f
 solution	p_12946_hanoi/hanoi.cpp	/^vector<vector<int>> solution(int n) {$/;"	f
@@ -951,20 +970,22 @@ solution	p_42626_morehot/morehot.py	/^def solution(scoville, K):$/;"	f
 solve	b_16236_babyshark/baby.java	/^	private void solve() {$/;"	m	class:baby	file:
 sortDownUp	b_16235_tree/tree.old.cpp	/^void sortDownUp(){$/;"	f
 sortUpDown	b_16235_tree/tree.old.cpp	/^void sortUpDown(){$/;"	f
-split	_basic/split.cpp	/^void split(string s,vector<string> &sv){$/;"	f
+split_find_distance	_basic/split.cpp	/^void split_find_distance(int fi, vector<int> &iv){$/;"	f
+split_sstream	_basic/split.cpp	/^void split_sstream(string s,vector<string> &sv){$/;"	f
+split_substr	_basic/split.cpp	/^vector<string> split_substr (string s, string delimiter) {$/;"	f
 spread	b_14502_labatory/labatory.cpp	/^void spread(int lab[8][8]){$/;"	f
 spring	b_16235_tree/javab/Program.java	/^	public void spring() {$/;"	m	class:Program
 spring	b_16235_tree/tree.old.cpp	/^void spring(){$/;"	f
 springsummer	b_16235_tree/tree.cpp	/^void springsummer(){$/;"	f
 sss	b_13546_seq4/test.sh	/^sss(){$/;"	f
 st	b_16236_babyshark/baby.java	/^		private static StringTokenizer st;$/;"	f	class:baby.sc	file:
+start	forager_firegalaxy/firegalaxy.cpp	/^clock_t start;$/;"	v
 startinter	b_14891_gear/gear.cpp	/^void startinter(int ind, int wise){$/;"	f
 state	b_16236_babyshark/babyshark.cpp	/^int state=2;$/;"	v
 states	b_14891_gear/gear.cpp	/^int states[4][8];$/;"	v
 step	forager_firegalaxy/firegalaxynew.cpp	/^int step;$/;"	v
 step	forager_firegalaxy/firegalaxyold.cpp	/^int step;$/;"	v
 stomach	b_16236_babyshark/babyshark.cpp	/^int stomach=0;$/;"	v
-stringfind	_basic/split.cpp	/^void stringfind(string s,string fs,vector<string> &sv){$/;"	f
 subchicken	b_15686_chicken/chicken.old.cpp	/^vector<pair<int,int> > subchicken;$/;"	v
 summer	b_16235_tree/javab/Program.java	/^	public void summer() {$/;"	m	class:Program
 summer	b_16235_tree/tree.old.cpp	/^void summer(){$/;"	f
@@ -978,6 +999,7 @@ sz	b_13545_seqquery/seqquery.cpp	/^int sz;$/;"	v
 targetSize	b_16236_babyshark/baby.java	/^	static int N, cnt, targetX, targetY, targetSize = 2, time = 0;$/;"	f	class:baby
 targetX	b_16236_babyshark/baby.java	/^	static int N, cnt, targetX, targetY, targetSize = 2, time = 0;$/;"	f	class:baby
 targetY	b_16236_babyshark/baby.java	/^	static int N, cnt, targetX, targetY, targetSize = 2, time = 0;$/;"	f	class:baby
+targetfol	format.java	/^package targetfol;$/;"	p
 taza	b_17281_baseball/baseball.cpp	/^vector<int> taza;$/;"	v
 tboard	b_15683_observation/observation.cpp	/^int tboard[8][8];$/;"	v
 tdir	b_3190_snake/snake.cpp	/^	int tdir;$/;"	m	struct:Part	file:
@@ -997,6 +1019,7 @@ treelist	b_16235_tree/javab/Program.java	/^	ArrayList<Tree> treelist;$/;"	f	clas
 trees	b_16235_tree/tree.cpp	/^vector<int> trees[10][10];$/;"	v
 trees	b_16235_tree/tree.old.cpp	/^vector<int> trees[R][C];$/;"	v
 trytilt	b_13460_biz/biz.cpp	/^int trytilt(Pos pos[3], Board& board)$/;"	f
+tt	_basic/test.cpp	/^int tt(int &t){$/;"	f
 tt	b_16236_babyshark/babyshark.cpp	/^int tt=0;$/;"	v
 tt	replace.py	/^tt = ["test","makein"]$/;"	v
 ttt	b_13546_seq4/test2/Makefile	/^ttt = server client$/;"	m
@@ -1006,7 +1029,6 @@ v	b_16137_seven/seven.cpp	/^int v[10][10]={0,};$/;"	v
 vec	b_16236_babyshark/babyshark.cpp	/^vector<pair<int,int> > vec;$/;"	v
 vec	sw_AWm8gU7KljcDFASj_UIonedayDate/UIonedayDate.cpp	/^vector<int> vec;$/;"	v
 veccnt	b_16236_babyshark/babyshark.cpp	/^vector<int> veccnt;$/;"	v
-vectorfind_replace	_basic/split.cpp	/^void vectorfind_replace(int fi, vector<int> &iv){$/;"	f
 vir	b_14502_labatory/labatory.cpp	/^vector<vector<int> > vir;$/;"	v
 vir	b_17142_labor/labor.cpp	/^vector<int> vir;$/;"	v
 vir_raw	b_14502_labatory/labatory.cpp	/^vector<vector<int> > vir_raw;$/;"	v
