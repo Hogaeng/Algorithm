@@ -25,7 +25,7 @@ elseif($targete -eq "python"){
 $targetexe=$targetfol+"/"+$target+$targetexe_e
 $makeinexe=$targetfol+"/"+"makein"+$targetexe_e
 $testexe=$targetfol+"/"+"test"+$targetexe_e
-
+$readme=$targetfol+"/"+"README.md"
 if($args[0] -eq "i"){
     if (-not(Test-Path -Path $targetfol)){
         mkdir $targetfol
@@ -36,6 +36,9 @@ if($args[0] -eq "i"){
     }
     if (-not(Test-Path -Path $targetin'.txt' -PathType Leaf)){
         New-Item $targetin'.txt' -type file
+    }
+    if (-not(Test-Path -Path $readme -PathType Leaf)){
+        New-Item $readme -type file
     }
 }
 
