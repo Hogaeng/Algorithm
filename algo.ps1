@@ -19,7 +19,7 @@ elseif($targete -eq "java"){
     $target="Main"
     $targetexe_e=""
 }
-elseif($targete -eq "python"){
+elseif($targete -eq "py"){
     $targetexe_e=".py"
 }
 $targetexe=$targetfol+"/"+$target+$targetexe_e
@@ -60,7 +60,7 @@ elseif($targete -eq "java"){
     elseif($args[0] -eq "i"){
     }
 }
-elseif($targete -eq "python"){
+elseif($targete -eq "py"){
     if($args[0] -eq "e"){
         python $targetexe
     }
