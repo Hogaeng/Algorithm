@@ -5,6 +5,6 @@
     > function m{ ./algo $args }
     끄고 다시 키기
 #>
-Set-Variable -Name "targetn" -Value "b_1904" -Scope global
-Set-Variable -Name "target" -Value "zeroonetile" -Scope global
+Set-Variable -Name "targetn" -Value "6_ihwa" -Scope global
+Set-Variable -Name "target" -Value "cafe" -Scope global
 Set-Variable -Name "targete" -Value "py" -Scope global
