@@ -7,7 +7,6 @@ if __name__ == "__main__":
     perm=it.permutations(li,r)
     for i in perm:
         print(i)
-    
     comb=it.combinations(li,r)
     for i in comb:
         print(i)
